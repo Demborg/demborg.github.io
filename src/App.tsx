@@ -3,6 +3,7 @@ import avatar from './img/avatar.jpg'
 import cppn from './img/cppn.png'
 import sju_ars_lycka from './img/sju_ars_lycka.jpg'
 import raytrace from './img/raytrace.png'
+import neon from './img/neon.jpg'
 
 interface Post {
   title: string;
@@ -19,11 +20,9 @@ interface Page {
 class Header extends React.Component {
   render () {
     return (
-      <div className="flex justify-between items-center py-4 bg-gray-800">
-        <div className="flex-shrink-0 ml-10">
-          <img className="h-16 w-16 rounded-full mx-auto" src={avatar} alt="my face"></img>
-          <span className="ml-1 text-3xl text-gray-300 font-semibold">Axel Demborg</span>
-      </div>
+    <div className="bg-gray-800 rounded overflow-hidden shadow-lg">
+      <img className="inline-block text-gray-700 rounded-full w-20 m-4" src={avatar} alt=""/>
+      <div className="inline-block text-3xl text-gray-300 font-semibold px-4 py-2 m-2">Axel Demborg</div>
     </div>
     )
   }
@@ -33,7 +32,7 @@ class Card extends React.Component<Post, {}> {
   render () {
     const {title, image, intro, tags} = this.props;
     return (
-      <div className="max-w-sm rounded overflow-hidden shadow-lg">
+      <div className="rounded overflow-hidden shadow-lg">
         <img className="w-full" src={image} alt={image}/>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
@@ -70,9 +69,10 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
-        {title: "Sju års lycka", image: sju_ars_lycka, intro: "Performing (very mild) civil disobedience by decorating a subway station with mirrors", tags: ["Art", "Mirror"]},
-        {title: "CPPN", image: cppn, intro: "Generative art implemented in tensorflowJS", tags: ["Art", "Rendering", "Coding"]},
-        {title: "Worst raytracer", image: raytrace, intro: "Builidng the worlds worst raytracer from scratch in Python", tags: ["Rendering", "Coding"]}
+        {title: "Sju års lycka", image: sju_ars_lycka, intro: "Performing (very mild) civil disobedience by decorating a subway station with mirrors", tags: ["Photography", "Mirror"]},
+        {title: "CPPN", image: cppn, intro: "Generative art implemented in tensorflowJS", tags: ["Rendering", "Coding"]},
+        {title: "Worst raytracer", image: raytrace, intro: "Builidng the worlds worst raytracer from scratch in Python", tags: ["Rendering", "Coding"]},
+        {title: "Neon", image: neon, intro: "Feeling cute, might delete later", tags: ["Photography", "NSFW"]}
         ]}/>
     </div>
   );
