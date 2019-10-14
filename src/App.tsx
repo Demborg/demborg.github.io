@@ -1,16 +1,17 @@
 import React from 'react';
 import avatar from './avatar.jpg'
+import cppn from './cppn.png'
 
 interface Post {
   title: string;
   image: string;
   intro: string;
-  body: string;
-  tags: [string];
+  body?: string;
+  tags: string[];
 }
 
 interface Page {
-  posts: [Post];
+  posts: Post[];
 }
 
 class Header extends React.Component {
@@ -26,55 +27,37 @@ class Header extends React.Component {
   }
 }
 
-class Card extends React.Component {
+class Card extends React.Component<Post, {}> {
   render () {
+    const {title, image, intro, tags} = this.props;
     return (
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/>
+        <img className="w-full" src={image} alt={image}/>
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="font-bold text-xl mb-2">{title}</div>
           <p className="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            {intro}
           </p>
         </div>
         <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+          {tags.map(tag => <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{tag}</span>)}
         </div>
       </div>
     )
   }
 }
 
-class Grid extends React.Component {
+class Grid extends React.Component<Page, {}> {
   render () {
+    const {posts} = this.props
     return (
       <div className="flex justify-center flex-wrap">
+        {posts.map(
+          post => 
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
-          <Card/>
+          <Card title={post.title} image={post.image} intro={post.intro} tags={post.tags}/>
         </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
-          <Card/>
-        </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
-          <Card/>
-        </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
-          <Card/>
-        </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
-          <Card/>
-        </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
-          <Card/>
-        </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
-          <Card/>
-        </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
-          <Card/>
-        </div>
+          )}
       </div>
     )
   }
@@ -84,7 +67,10 @@ const App: React.FC = () => {
   return (
     <div className="container mx-auto">
       <Header/>
-      <Grid/>
+      <Grid posts={[
+        {title: "Vandalism", image: "test.jpg", intro: "bla bla bla", tags: ["Art", "Mirror"]},
+        {title: "CPPN", image: cppn, intro: "Generative art implemented in tensorflowJS", tags: ["Art", "Rendering"]}
+        ]}/>
     </div>
   );
 }
