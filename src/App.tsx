@@ -4,6 +4,7 @@ import cppn from './img/cppn.png'
 import sju_ars_lycka from './img/sju_ars_lycka.jpg'
 import raytrace from './img/raytrace.png'
 import neon from './img/neon.jpg'
+import this_very_website from './img/this_very_website.png'
 
 interface Post {
   title: string;
@@ -20,7 +21,7 @@ interface Page {
 class Header extends React.Component {
   render () {
     return (
-    <div className="bg-gray-800 rounded overflow-hidden shadow-lg">
+    <div className="bg-gray-800 overflow-hidden shadow-lg">
       <img className="inline-block text-gray-700 rounded-full w-20 m-4" src={avatar} alt=""/>
       <div className="inline-block text-3xl text-gray-300 font-semibold px-4 py-2 m-2">Axel Demborg</div>
     </div>
@@ -55,7 +56,7 @@ class Grid extends React.Component<Page, {}> {
       <div className="flex flex-wrap">
         {posts.map(
           post => 
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4">
+        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 hover:p-2 p-4">
           <Card title={post.title} image={post.image} intro={post.intro} tags={post.tags}/>
         </div>
           )}
@@ -69,9 +70,10 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {title: "This very webside", image: this_very_website, intro: "Continuing to learn frontend by building myself a little portfolio page", tags: ["Coding"]},
         {title: "Sju års lycka", image: sju_ars_lycka, intro: "Performing (very mild) civil disobedience by decorating a subway station with mirrors", tags: ["Photography", "Mirror"]},
         {title: "CPPN", image: cppn, intro: "Generative art implemented in tensorflowJS", tags: ["Rendering", "Coding"]},
-        {title: "Worst raytracer", image: raytrace, intro: "Builidng the worlds worst raytracer from scratch in Python", tags: ["Rendering", "Coding"]},
+        {title: "Worst raytracer", image: raytrace, intro: "Building the worlds worst raytracer from scratch in Python", tags: ["Rendering", "Coding"]},
         {title: "Neon", image: neon, intro: "Feeling cute, might delete later", tags: ["Photography", "NSFW"]}
         ]}/>
     </div>

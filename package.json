@@ -2,7 +2,7 @@
   "name": "demborg.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://demborg.github.io",
+  "homepage": "https://demborg.se",
   "dependencies": {
     "@types/jest": "24.0.18",
     "@types/node": "12.7.11",

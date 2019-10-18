@@ -467,7 +467,7 @@ module.exports = {
     order: ['responsive'],
     outline: ['responsive', 'focus'],
     overflow: ['responsive'],
-    padding: ['responsive'],
+    padding: ['responsive', 'hover'],
     placeholderColor: ['responsive', 'focus'],
     pointerEvents: ['responsive'],
     position: ['responsive'],
