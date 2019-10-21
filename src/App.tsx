@@ -3,7 +3,6 @@ import avatar from './img/avatar.jpg'
 import cppn from './img/cppn.png'
 import sju_ars_lycka from './img/sju_ars_lycka.jpg'
 import raytrace from './img/raytrace.png'
-import neon from './img/neon.jpg'
 import this_very_website from './img/this_very_website.png'
 
 interface Post {
@@ -74,7 +73,6 @@ const App: React.FC = () => {
         {title: "Sju års lycka", image: sju_ars_lycka, intro: "Performing (very mild) civil disobedience by decorating a subway station with mirrors", tags: ["Photography", "Mirror"]},
         {title: "CPPN", image: cppn, intro: "Generative art implemented in tensorflowJS", tags: ["Rendering", "Coding"]},
         {title: "Worst raytracer", image: raytrace, intro: "Building the worlds worst raytracer from scratch in Python", tags: ["Rendering", "Coding"]},
-        {title: "Neon", image: neon, intro: "Feeling cute, might delete later", tags: ["Photography", "NSFW"]}
         ]}/>
     </div>
   );
