@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@variants hover {
+    .zoom-10 {
+        transition: transform .2s;
+        transform: scale(1.1);
+    }
+}

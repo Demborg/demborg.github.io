@@ -55,7 +55,7 @@ class Grid extends React.Component<Page, {}> {
       <div className="flex flex-wrap">
         {posts.map(
           post => 
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 hover:p-2 p-4">
+        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 hover:zoom-10 p-4">
           <Card title={post.title} image={post.image} intro={post.intro} tags={post.tags}/>
         </div>
           )}

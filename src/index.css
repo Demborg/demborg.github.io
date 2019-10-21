@@ -11961,6 +11961,24 @@ video {
   z-index: auto;
 }
 
+.zoom-10 {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hover\:zoom-10:hover {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
