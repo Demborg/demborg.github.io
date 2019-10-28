@@ -4,6 +4,7 @@ import cppn from './img/cppn.png'
 import sju_ars_lycka from './img/sju_ars_lycka.jpg'
 import raytrace from './img/raytrace.png'
 import this_very_website from './img/this_very_website.png'
+import playlist from './img/playlist.png'
 
 interface Link {
   text: string;
@@ -86,7 +87,13 @@ const App: React.FC = () => {
       <Header/>
       <Grid posts={[
         {
-          title: "This very webside", 
+          title: "Playlist from chat history",
+          image: playlist,
+          intro: "A very quick and dirty hack to make a Spotify playlist from all the songs mentioned in a facebook chat",
+          links: [{text: "Playlist", url: "https://open.spotify.com/user/dr.lexa/playlist/7DdH0Ogd8plJ0UEUc3KsfL?si=ZAdXPMTERBaNSlGELHG4TA"}, {text: "Source", url: "https://github.com/Demborg/messenger-parsing"}]
+        },
+        {
+          title: "This very website", 
           image: this_very_website, 
           intro: "Continuing to learn frontend by building myself a little portfolio page", 
           links: [{text: "Try", url: "https://demborg.se/"}, {text: "Source", url: "https://github.com/Demborg/demborg.github.io"}]
