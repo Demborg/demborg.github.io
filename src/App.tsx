@@ -91,7 +91,7 @@ const App: React.FC = () => {
           title: "Folding desk",
           image: folding_desk,
           intro: "A home built folding desk/tv shelf for these trying times and more.",
-          links: [{text: "Instagram"}]
+          links: [{text: "Instagram", url: "https://instagram.com"}]
         },
         {
           title: "Playlist from chat history",
