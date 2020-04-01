@@ -5,6 +5,7 @@ import sju_ars_lycka from './img/sju_ars_lycka.jpg'
 import raytrace from './img/raytrace.png'
 import this_very_website from './img/this_very_website.png'
 import playlist from './img/playlist.png'
+import folding_desk from './img/folding_desk.gif'
 
 interface Link {
   text: string;
@@ -86,6 +87,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Folding desk",
+          image: folding_desk,
+          intro: "A home built folding desk/tv shelf for these trying times and more.",
+          links: [{text: "Instagram", url: "https://www.instagram.com/p/B-c9dOrlxzt/"}]
+        },
         {
           title: "Playlist from chat history",
           image: playlist,
