@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75d00f5af556bb3202243a9c5f4840f1",
+    "revision": "cefec33f29319d743d0565caf24a2d6d",
     "url": "/index.html"
   },
   {
-    "revision": "9dad4ff7eb383b0f0a07",
-    "url": "/static/css/main.3ef3e769.chunk.css"
+    "revision": "174923bf8bc202155100",
+    "url": "/static/css/main.fd607723.chunk.css"
   },
   {
-    "revision": "8df2776bd2df18a96b4b",
-    "url": "/static/js/2.f67ee773.chunk.js"
+    "revision": "91ab1496cfbf457042c4",
+    "url": "/static/js/2.45f11a85.chunk.js"
   },
   {
-    "revision": "9dad4ff7eb383b0f0a07",
-    "url": "/static/js/main.eb2f657b.chunk.js"
+    "revision": "174923bf8bc202155100",
+    "url": "/static/js/main.7e894dc7.chunk.js"
   },
   {
-    "revision": "1725402dec3ea1cf1b02",
-    "url": "/static/js/runtime-main.db8e8387.js"
+    "revision": "c4d7e068e2c1b62d0627",
+    "url": "/static/js/runtime-main.693476b2.js"
   },
   {
     "revision": "d50c9485feaae09423e556b7609a473b",
     "url": "/static/media/avatar.d50c9485.jpg"
+  },
+  {
+    "revision": "8811d99d688ad537fff6575736664fd3",
+    "url": "/static/media/color_organ.8811d99d.jpg"
   },
   {
     "revision": "4ce37009a85c9a292277340836afcd36",
