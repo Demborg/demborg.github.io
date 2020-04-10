@@ -6,6 +6,7 @@ import raytrace from './img/raytrace.png'
 import this_very_website from './img/this_very_website.png'
 import playlist from './img/playlist.png'
 import folding_desk from './img/folding_desk.gif'
+import color_organ from './img/color_organ.jpg'
 
 interface Link {
   text: string;
@@ -88,9 +89,15 @@ const App: React.FC = () => {
       <Header/>
       <Grid posts={[
         {
+          title: "Dead bug color organ",
+          image: color_organ,
+          intro: "A dead bug style analog color organ built to combat the bordom of quarantine",
+          links: [{text: "Inspiration", url: "https://www.instructables.com/id/LED-Color-Organ-Triple-Deluxe/"}, {text: "Instagram", url: "https://www.instagram.com/p/B-pTLsSF2cb/"}]
+        },
+        {
           title: "Folding desk",
           image: folding_desk,
-          intro: "A home built folding desk/tv shelf for these trying times and more.",
+          intro: "A home built folding desk/tv shelf for these trying times and more",
           links: [{text: "Instagram", url: "https://www.instagram.com/p/B-c9dOrlxzt/"}]
         },
         {
