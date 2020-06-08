@@ -2,6 +2,8 @@
 # Demborg.se
 A profolio page built by myself, for myself.
 
+Built and "designed" using tailwind and typescript.
+
 ## Setup
 install the requirements:
 `yarn install`
