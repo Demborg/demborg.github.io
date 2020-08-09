@@ -7,6 +7,7 @@ import this_very_website from './img/this_very_website.png'
 import playlist from './img/playlist.png'
 import folding_desk from './img/folding_desk.gif'
 import color_organ from './img/color_organ.jpg'
+import narcissus from './img/narcissus.gif'
 
 interface Link {
   text: string;
@@ -89,9 +90,15 @@ const App: React.FC = () => {
       <Header/>
       <Grid posts={[
         {
+          title: "Project Narcissus",
+          image: narcissus,
+          intro: "Feeding my inner narcissist by training a VAE to generate selfies of myself",
+          links: [{text: "Try", url: "https://demborg.se/narcissus"},  {text: "Source", url: "https://github.com/Demborg/narcissus"}]
+        },
+        {
           title: "Dead bug color organ",
           image: color_organ,
-          intro: "A dead bug style analog color organ built to combat the bordom of quarantine",
+          intro: "A dead bug style analog color organ built to combat the boredom of quarantine",
           links: [{text: "Inspiration", url: "https://www.instructables.com/id/LED-Color-Organ-Triple-Deluxe/"}, {text: "Instagram", url: "https://www.instagram.com/p/B-pTLsSF2cb/"}]
         },
         {
