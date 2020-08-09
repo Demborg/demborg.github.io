@@ -126,7 +126,7 @@ const App: React.FC = () => {
           title: "Swapping images",
           images: [img1, img2],
           intro: "Making it possible to swap between multiple images on this site",
-          links: [{text: "Inspiration", url: "http://css3.bradshawenterprises.com/cfimg/"}]
+          links: [{text: "Source", url: "https://github.com/Demborg/demborg.github.io/pull/7"}]
         },
         {
           title: "Project Narcissus",
