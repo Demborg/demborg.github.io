@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.a13ede40.chunk.css",
-    "main.js": "/static/js/main.cc88d861.chunk.js",
-    "main.js.map": "/static/js/main.cc88d861.chunk.js.map",
+    "main.js": "/static/js/main.37905323.chunk.js",
+    "main.js.map": "/static/js/main.37905323.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.693476b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.693476b2.js.map",
-    "static/js/2.5384f742.chunk.js": "/static/js/2.5384f742.chunk.js",
-    "static/js/2.5384f742.chunk.js.map": "/static/js/2.5384f742.chunk.js.map",
+    "static/js/2.d7b22e56.chunk.js": "/static/js/2.d7b22e56.chunk.js",
+    "static/js/2.d7b22e56.chunk.js.map": "/static/js/2.d7b22e56.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.82b6565055ba2c30af0dea86a61a2d34.js": "/precache-manifest.82b6565055ba2c30af0dea86a61a2d34.js",
+    "precache-manifest.5eca14144428beed70812f2292611baa.js": "/precache-manifest.5eca14144428beed70812f2292611baa.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.a13ede40.chunk.css.map": "/static/css/main.a13ede40.chunk.css.map",
     "static/media/avatar.jpg": "/static/media/avatar.d50c9485.jpg",
@@ -17,6 +17,12 @@
     "static/media/folding_desk.gif": "/static/media/folding_desk.f46905bb.gif",
     "static/media/img1.jpg": "/static/media/img1.fee8122c.jpg",
     "static/media/img2.jpg": "/static/media/img2.b9648bb4.jpg",
+    "static/media/lamp1.jpg": "/static/media/lamp1.afd25dfb.jpg",
+    "static/media/lamp2.jpg": "/static/media/lamp2.5aa500e5.jpg",
+    "static/media/lamp3.jpg": "/static/media/lamp3.fa9aa3b5.jpg",
+    "static/media/lamp4.jpg": "/static/media/lamp4.202184e8.jpg",
+    "static/media/lamp5.jpg": "/static/media/lamp5.6c794a72.jpg",
+    "static/media/lamp6.jpg": "/static/media/lamp6.e1a30ff0.jpg",
     "static/media/narcissus.gif": "/static/media/narcissus.9ab9d1bc.gif",
     "static/media/playlist.png": "/static/media/playlist.0526350e.png",
     "static/media/raytrace.png": "/static/media/raytrace.b7face0f.png",
@@ -25,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.693476b2.js",
-    "static/js/2.5384f742.chunk.js",
+    "static/js/2.d7b22e56.chunk.js",
     "static/css/main.a13ede40.chunk.css",
-    "static/js/main.cc88d861.chunk.js"
+    "static/js/main.37905323.chunk.js"
   ]
 }
