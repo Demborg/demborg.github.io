@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ce709f4f8bc6f04343b6789b6678884",
+    "revision": "fa9a22148feaeec08b431bea5600a53c",
     "url": "/index.html"
   },
   {
-    "revision": "a64d03ec9bfbec9e315f",
+    "revision": "29ad152d8c9491e88498",
     "url": "/static/css/main.a13ede40.chunk.css"
   },
   {
-    "revision": "b6e94d998b90e494b6b4",
-    "url": "/static/js/2.4837f6a5.chunk.js"
+    "revision": "ebbe0dc4d6acd5209b26",
+    "url": "/static/js/2.792f3cd0.chunk.js"
   },
   {
-    "revision": "a64d03ec9bfbec9e315f",
-    "url": "/static/js/main.c46e1d9c.chunk.js"
+    "revision": "29ad152d8c9491e88498",
+    "url": "/static/js/main.cc88d861.chunk.js"
   },
   {
     "revision": "c4d7e068e2c1b62d0627",
@@ -34,6 +34,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f46905bbf8eecb290c1db712dd75ff06",
     "url": "/static/media/folding_desk.f46905bb.gif"
+  },
+  {
+    "revision": "fee8122c8d48db12a0afdeac917d4edb",
+    "url": "/static/media/img1.fee8122c.jpg"
+  },
+  {
+    "revision": "b9648bb426312a457dc0631521858bee",
+    "url": "/static/media/img2.b9648bb4.jpg"
   },
   {
     "revision": "9ab9d1bc9d002b7413db930ddeba8830",
