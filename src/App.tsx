@@ -92,7 +92,7 @@ const App: React.FC = () => {
         {
           title: "Project Narcissus",
           image: narcissus,
-          intro: "Feeding my inner narcissist by training a VAE to generate selfies of myself",
+          intro: "Feeding my inner narcissist by training a VAE to generate (chockingly bad) \"selfies\" of myself",
           links: [{text: "Try", url: "https://demborg.se/narcissus"},  {text: "Source", url: "https://github.com/Demborg/narcissus"}]
         },
         {
