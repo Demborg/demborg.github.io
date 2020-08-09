@@ -69,7 +69,6 @@ class ImageDisplay extends React.Component<Images, ImageState> {
       () => this.setState({ counter: this.state.counter + 1 }),
       6000
     )
-
     return () => clearInterval(interval)
   }
 
@@ -124,9 +123,9 @@ const App: React.FC = () => {
       <Header/>
       <Grid posts={[
         {
-          title: "Crossfading images",
+          title: "Swapping images",
           images: [img1, img2],
-          intro: "Making it possible to crossfade between multiple images on this site",
+          intro: "Making it possible to swap between multiple images on this site",
           links: [{text: "Inspiration", url: "http://css3.bradshawenterprises.com/cfimg/"}]
         },
         {
