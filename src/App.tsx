@@ -16,6 +16,14 @@ interface Link {
   url: string;
 }
 
+interface Images {
+  images: string[];
+}
+
+interface ImageState {
+  counter: number;
+}
+
 interface Post {
   title: string;
   images: string[];
@@ -50,12 +58,36 @@ class LinkButton extends React.Component<Link, {}> {
   }
 }
 
+class ImageDisplay extends React.Component<Images, ImageState> {
+  constructor(props: Images) {
+    super(props)
+    this.state = {'counter': 0}
+  }
+
+  componentDidMount () {
+    const interval = setInterval(
+      () => this.setState({ counter: this.state.counter + 1 }),
+      6000
+    )
+
+    return () => clearInterval(interval)
+  }
+
+  render () {
+    const {images} = this.props;
+    const imgIdx = this.state.counter % images.length
+    return (
+      <img className="w-full" src={images[imgIdx]} alt={images[imgIdx]}/>
+    )
+  }
+}
+
 class Card extends React.Component<Post, {}> {
   render () {
     const {title, images, intro, links} = this.props;
     return (
       <div className="rounded overflow-hidden shadow-lg">
-        <img className="w-full" src={images[0]} alt={images[0]}/>
+        <ImageDisplay images={images}/>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
           <p className="text-gray-700 text-base">
