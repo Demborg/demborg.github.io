@@ -10,6 +10,12 @@ import color_organ from './img/color_organ.jpg'
 import narcissus from './img/narcissus.gif'
 import img1 from './img/img1.jpg'
 import img2 from './img/img2.jpg'
+import lamp1 from './img/lamp1.jpg'
+import lamp2 from './img/lamp2.jpg'
+import lamp3 from './img/lamp3.jpg'
+import lamp4 from './img/lamp4.jpg'
+import lamp5 from './img/lamp5.jpg'
+import lamp6 from './img/lamp6.jpg'
 
 interface Link {
   text: string;
@@ -122,6 +128,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Lamps",
+          images: [lamp1, lamp2, lamp3, lamp4, lamp5, lamp6],
+          intro: "Making me some lamps to bring more light into my new apartment",
+          links: [{text: "Instagram", url: "https://www.instagram.com/p/CDqzMN7FAqi/"}, {text: "Instagram", url: "https://www.instagram.com/p/CDmik66F2ng/"}]
+        },
         {
           title: "Swapping images",
           images: [img1, img2],
