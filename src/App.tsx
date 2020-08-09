@@ -16,7 +16,7 @@ interface Link {
 
 interface Post {
   title: string;
-  image: string;
+  images: string[];
   intro: string;
   body?: string;
   links: Link[];
@@ -50,10 +50,10 @@ class LinkButton extends React.Component<Link, {}> {
 
 class Card extends React.Component<Post, {}> {
   render () {
-    const {title, image, intro, links} = this.props;
+    const {title, images, intro, links} = this.props;
     return (
       <div className="rounded overflow-hidden shadow-lg">
-        <img className="w-full" src={image} alt={image}/>
+        <img className="w-full" src={images[0]} alt={images[0]}/>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
           <p className="text-gray-700 text-base">
@@ -76,7 +76,7 @@ class Grid extends React.Component<Page, {}> {
         {posts.map(
           post => 
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 hover:zoom-10 p-4">
-          <Card title={post.title} image={post.image} intro={post.intro} links={post.links}/>
+          <Card title={post.title} images={post.images} intro={post.intro} links={post.links}/>
         </div>
           )}
       </div>
@@ -91,49 +91,49 @@ const App: React.FC = () => {
       <Grid posts={[
         {
           title: "Project Narcissus",
-          image: narcissus,
+          images: [narcissus],
           intro: "Feeding my inner narcissist by training a VAE to generate (chockingly bad) \"selfies\" of myself",
           links: [{text: "Try", url: "https://demborg.se/narcissus"},  {text: "Source", url: "https://github.com/Demborg/narcissus"}]
         },
         {
           title: "Dead bug color organ",
-          image: color_organ,
+          images: [color_organ],
           intro: "A dead bug style analog color organ built to combat the boredom of quarantine",
           links: [{text: "Inspiration", url: "https://www.instructables.com/id/LED-Color-Organ-Triple-Deluxe/"}, {text: "Instagram", url: "https://www.instagram.com/p/B-pTLsSF2cb/"}]
         },
         {
           title: "Folding desk",
-          image: folding_desk,
+          images: [folding_desk],
           intro: "A home built folding desk/tv shelf for these trying times and more",
           links: [{text: "Instagram", url: "https://www.instagram.com/p/B-c9dOrlxzt/"}]
         },
         {
           title: "Playlist from chat history",
-          image: playlist,
+          images: [playlist],
           intro: "A very quick and dirty hack to make a Spotify playlist from all the songs mentioned in a facebook chat",
           links: [{text: "Playlist", url: "https://open.spotify.com/user/dr.lexa/playlist/7DdH0Ogd8plJ0UEUc3KsfL?si=ZAdXPMTERBaNSlGELHG4TA"}, {text: "Source", url: "https://github.com/Demborg/messenger-parsing"}]
         },
         {
-          title: "This very website", 
-          image: this_very_website, 
+          title: "This very website",
+          images: [this_very_website],
           intro: "Continuing to learn frontend by building myself a little portfolio page", 
           links: [{text: "Try", url: "https://demborg.se/"}, {text: "Source", url: "https://github.com/Demborg/demborg.github.io"}]
         },
         {
-          title: "Sju års lycka", 
-          image: sju_ars_lycka, 
+          title: "Sju års lycka",
+          images: [sju_ars_lycka],
           intro: "Performing (very mild) civil disobedience by decorating a subway station with mirrors", 
           links: [{text: "Instagram", url: "https://www.instagram.com/p/B3hWzMuFEOh/"}]
         },
         {
           title: "CPPN",
-          image: cppn,
+          images: [cppn],
           intro: "Generative art implemented in tensorflowJS",
           links: [{text: "Try", url: "https://demborg.se/cppn/"}, {text: "Source", url: "https://github.com/Demborg/cppn"}]
         },
         {
           title: "Worst raytracer",
-          image: raytrace,
+          images: [raytrace],
           intro: "Building the worlds worst raytracer from scratch in Python",
           links: [{text: "Source", url: "https://github.com/Demborg/raytrace"}]
         },
