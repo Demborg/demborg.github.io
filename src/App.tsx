@@ -8,6 +8,8 @@ import playlist from './img/playlist.png'
 import folding_desk from './img/folding_desk.gif'
 import color_organ from './img/color_organ.jpg'
 import narcissus from './img/narcissus.gif'
+import img1 from './img/img1.jpg'
+import img2 from './img/img2.jpg'
 
 interface Link {
   text: string;
@@ -89,6 +91,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Crossfading images",
+          images: [img1, img2],
+          intro: "Making it possible to crossfade between multiple images on this site",
+          links: [{text: "Inspiration", url: "http://css3.bradshawenterprises.com/cfimg/"}]
+        },
         {
           title: "Project Narcissus",
           images: [narcissus],
