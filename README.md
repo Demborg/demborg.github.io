@@ -11,5 +11,5 @@ install the requirements:
 run the app localy:
 `yarn start`
 
-deploy the app to github pages:
-`yarn deploy`
+## Deploy
+Pushes to source branch are automatically built and deployed to master
