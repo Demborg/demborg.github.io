@@ -70,6 +70,11 @@ class ImageDisplay extends React.Component<Images, ImageState> {
     this.state = {'counter': 0}
   }
 
+  handleClick = () => {
+    console.log("hello?!")
+    this.setState({counter: this.state.counter + 1})
+  }
+
   componentDidMount () {
     const interval = setInterval(
       () => this.setState({ counter: this.state.counter + 1 }),
@@ -82,7 +87,7 @@ class ImageDisplay extends React.Component<Images, ImageState> {
     const {images} = this.props;
     const imgIdx = this.state.counter % images.length
     return (
-      <img className="w-full" src={images[imgIdx]} alt={images[imgIdx]}/>
+      <img className="w-full" src={images[imgIdx]} alt={images[imgIdx]} onClick={this.handleClick}/>
     )
   }
 }
