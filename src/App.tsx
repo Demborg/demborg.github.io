@@ -30,6 +30,10 @@ interface ImageState {
   counter: number;
 }
 
+interface CardState {
+  hidden: boolean;
+}
+
 interface Post {
   title: string;
   images: string[];
@@ -92,17 +96,32 @@ class ImageDisplay extends React.Component<Images, ImageState> {
   }
 }
 
-class Card extends React.Component<Post, {}> {
+class Card extends React.Component<Post, CardState> {
+  constructor(props: Post) {
+    super(props)
+    this.state = {'hidden': true}
+  }
+
+  handleMouseIn = () => {
+    this.setState({hidden: false})
+  }
+
+  handleMouseOut = () => {
+    this.setState({hidden: true})
+  }
+
   render () {
     const {title, images, intro, links} = this.props;
     return (
-      <div className="rounded overflow-hidden shadow-lg">
+      <div className="rounded overflow-hidden shadow-lg" onMouseEnter={this.handleMouseIn} onMouseLeave={this.handleMouseOut}>
         <ImageDisplay images={images}/>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
-          <p className="text-gray-700 text-base">
-            {intro}
-          </p>
+          {!this.state.hidden && (
+            <p className="text-gray-700 text-base">
+              {intro}
+            </p>
+          )}
         </div>
         <div className="px-6 py-4">
           {links.map(link => <LinkButton text={link.text} url={link.url}/>)}
