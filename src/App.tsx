@@ -91,7 +91,12 @@ class ImageDisplay extends React.Component<Images, ImageState> {
     const {images} = this.props;
     const imgIdx = this.state.counter % images.length
     return (
-      <img className="w-full" src={images[imgIdx]} alt={images[imgIdx]} onClick={this.handleClick}/>
+        <div className="relative w-full pt-1/1" onClick={this.handleClick}>
+          {images.map((image, idx) => 
+            <img src={image} alt={image} className={
+              "absolute top-0 right-0 w-full transition duration-500 ease-in-out " +
+              (imgIdx === idx ? "opacity-100" : "opacity-0")}/>)}
+        </div>
     )
   }
 }
