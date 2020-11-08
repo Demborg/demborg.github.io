@@ -123,12 +123,10 @@ class Card extends React.Component<Post, CardState> {
         <ImageDisplay images={images}/>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
+          {links.map(link => <LinkButton text={link.text} url={link.url}/>)}
           <p className={`text-gray-700 text-base ${this.state.hidden ? 'lg:hidden xl:hidden' : ''}`}>
             {intro}
           </p>
-        </div>
-        <div className="px-6 py-4">
-          {links.map(link => <LinkButton text={link.text} url={link.url}/>)}
         </div>
       </div>
     )
