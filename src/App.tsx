@@ -16,6 +16,7 @@ import lamp3 from './img/lamp3.jpg'
 import lamp4 from './img/lamp4.jpg'
 import lamp5 from './img/lamp5.jpg'
 import lamp6 from './img/lamp6.jpg'
+import scope from './img/scope.gif'
 
 interface Link {
   text: string;
@@ -155,6 +156,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Scope face",
+          images: [scope],
+          intro: "Showing a webcam feed on a oscilloscope screen by converting it to terrible sound",
+          links: [{text: "Source", url:"https://github.com/Demborg/scope-face"}]
+        },
         {
           title: "Lamps",
           images: [lamp1, lamp2, lamp3, lamp4, lamp5, lamp6],
