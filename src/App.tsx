@@ -17,6 +17,7 @@ import lamp4 from './img/lamp4.jpg'
 import lamp5 from './img/lamp5.jpg'
 import lamp6 from './img/lamp6.jpg'
 import scope from './img/scope.gif'
+import poetry from './img/poetry.png'
 
 interface Link {
   text: string;
@@ -154,6 +155,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Python poetry",
+          images: [poetry],
+          intro: "I was embarrassingly proud of some of my solutions to this years advent of code puzzles. Pretentiously I call them \"python poetry\"",
+          links: [{text: "Problem", url: "https://adventofcode.com/2020/day/4"}, {text: "Solution", url: "https://github.com/Demborg/aoc20/blob/main/4.py"}]
+        },
         {
           title: "Scope face",
           images: [scope],
