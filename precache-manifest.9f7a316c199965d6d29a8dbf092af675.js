@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "880d0df126df59d80b31c1a0aad85764",
+    "revision": "253fd441070d44209eb23fb5846827dc",
     "url": "/index.html"
   },
   {
-    "revision": "e674bde2265602dbf8d8",
+    "revision": "2a55f522e477f537dbff",
     "url": "/static/css/main.f7d10b11.chunk.css"
   },
   {
-    "revision": "b7e915b6f80beded8b4c",
-    "url": "/static/js/2.c379ac73.chunk.js"
+    "revision": "34078de0aaa9bae13a23",
+    "url": "/static/js/2.f862c68c.chunk.js"
   },
   {
-    "revision": "e674bde2265602dbf8d8",
-    "url": "/static/js/main.372b6e30.chunk.js"
+    "revision": "2a55f522e477f537dbff",
+    "url": "/static/js/main.928104f6.chunk.js"
   },
   {
     "revision": "c4d7e068e2c1b62d0627",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0526350e4332bd34d7be1b3f2c32fa21",
     "url": "/static/media/playlist.0526350e.png"
+  },
+  {
+    "revision": "83a6e76050dc7eaacf479eba83f4049f",
+    "url": "/static/media/poetry.83a6e760.png"
   },
   {
     "revision": "b7face0f19d3b2b094ffa43899d8c3ba",
