@@ -1,7 +1,10 @@
 import React from 'react';
 import avatar from './img/avatar.jpg'
 import cppn from './img/cppn.png'
-import sju_ars_lycka from './img/sju_ars_lycka.jpg'
+import sju_ars_lycka1 from './img/sju_ars_lycka1.jpg'
+import sju_ars_lycka2 from './img/sju_ars_lycka2.jpg'
+import sju_ars_lycka3 from './img/sju_ars_lycka3.jpg'
+import sju_ars_lycka4 from './img/sju_ars_lycka4.jpg'
 import raytrace from './img/raytrace.png'
 import this_very_website from './img/this_very_website.png'
 import playlist from './img/playlist.png'
@@ -211,7 +214,7 @@ const App: React.FC = () => {
         },
         {
           title: "Sju års lycka",
-          images: [sju_ars_lycka],
+          images: [sju_ars_lycka3, sju_ars_lycka1, sju_ars_lycka2, sju_ars_lycka4],
           intro: "Performing (very mild) civil disobedience by decorating a subway station with mirrors", 
           links: [{text: "Instagram", url: "https://www.instagram.com/p/B3hWzMuFEOh/"}]
         },
