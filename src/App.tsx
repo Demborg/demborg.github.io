@@ -21,7 +21,9 @@ import lamp5 from './img/lamp5.jpg'
 import lamp6 from './img/lamp6.jpg'
 import scope from './img/scope.gif'
 import poetry from './img/poetry.png'
-import apples from './img/apples.png'
+import apples1 from './img/apples1.jpg'
+import apples2 from './img/apples2.jpg'
+import apples3 from './img/apples3.jpg'
 
 interface Link {
   text: string;
@@ -161,7 +163,7 @@ const App: React.FC = () => {
       <Grid posts={[
         {
           title: "My first blender render!",
-          images: [apples],
+          images: [apples1, apples2, apples3],
           intro: "I just completed my first blender tutorial and was really excited with the resulting bowl of apples. Despite or maybe, because of, its many flaws.",
           links: [{text: "Tutorial", url: "https://www.youtube.com/watch?v=j14b25SnYRY&list=PL3UWN2F2M2C8-zUjbFlbgtWPQa0NXBsp0"}]
         },
