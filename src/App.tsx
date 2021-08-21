@@ -24,6 +24,7 @@ import poetry from './img/poetry.png'
 import apples1 from './img/apples1.jpg'
 import apples2 from './img/apples2.jpg'
 import apples3 from './img/apples3.jpg'
+import robot from './img/robot.jpg'
 
 interface Link {
   text: string;
@@ -161,6 +162,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Line plotter robot",
+          images: [robot],
+          intro: "Building a little line driven plotter robot from some steppers and old lego. All for the great art, and for learning some inverse kinematics.",
+          links: [{text: "Source", url: "https://github.com/Demborg/line_plotter"}]
+        },
         {
           title: "My first blender render!",
           images: [apples1, apples2, apples3],
