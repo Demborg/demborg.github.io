@@ -25,6 +25,8 @@ import apples1 from './img/apples1.jpg'
 import apples2 from './img/apples2.jpg'
 import apples3 from './img/apples3.jpg'
 import robot from './img/robot.jpg'
+import robot1 from './img/robot1.jpg'
+import robot2 from './img/robot2.jpg'
 
 interface Link {
   text: string;
@@ -164,8 +166,8 @@ const App: React.FC = () => {
       <Grid posts={[
         {
           title: "Line plotter robot",
-          images: [robot],
-          intro: "Building a little line driven plotter robot from some steppers and old lego. All for the great art, and for learning some inverse kinematics.",
+          images: [robot, robot1, robot2],
+          intro: "Building a little line driven plotter robot from some steppers and old lego. And writing the inverse kinematics and hilbert curve based image processing pipeline to drive it as a weekend project with a friend.",
           links: [{text: "Source", url: "https://github.com/Demborg/line_plotter"}]
         },
         {
