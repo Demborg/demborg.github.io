@@ -167,8 +167,8 @@ const App: React.FC = () => {
         {
           title: "Line plotter robot",
           images: [robot, robot1, robot2],
-          intro: "Building a little line driven plotter robot from some steppers and old lego. And writing the inverse kinematics and hilbert curve based image processing pipeline to drive it as a weekend project with a friend.",
-          links: [{text: "Source", url: "https://github.com/Demborg/line_plotter"}]
+          intro: "Building a little line driven plotter robot from some steppers and old lego as well writing a few different algorithms for converting images to plotter paths.",
+          links: [{text: "Source", url: "https://github.com/Demborg/line_plotter"}, {text: "Instagram", url: "https://www.instagram.com/p/CS7l_AosEba/"}]
         },
         {
           title: "My first blender render!",
