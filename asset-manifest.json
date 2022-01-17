@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.f7d10b11.chunk.css",
-    "main.js": "/static/js/main.40d45d6f.chunk.js",
-    "main.js.map": "/static/js/main.40d45d6f.chunk.js.map",
+    "main.js": "/static/js/main.bd033fcc.chunk.js",
+    "main.js.map": "/static/js/main.bd033fcc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.693476b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.693476b2.js.map",
-    "static/js/2.58b5e900.chunk.js": "/static/js/2.58b5e900.chunk.js",
-    "static/js/2.58b5e900.chunk.js.map": "/static/js/2.58b5e900.chunk.js.map",
+    "static/js/2.6d0e57ea.chunk.js": "/static/js/2.6d0e57ea.chunk.js",
+    "static/js/2.6d0e57ea.chunk.js.map": "/static/js/2.6d0e57ea.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3be645e31bb813e0afeac09408970be0.js": "/precache-manifest.3be645e31bb813e0afeac09408970be0.js",
+    "precache-manifest.39f56019280ed1d6d3037cf4dd169169.js": "/precache-manifest.39f56019280ed1d6d3037cf4dd169169.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.f7d10b11.chunk.css.map": "/static/css/main.f7d10b11.chunk.css.map",
     "static/media/apples1.jpg": "/static/media/apples1.3ef79f1d.jpg",
@@ -17,6 +17,7 @@
     "static/media/avatar.jpg": "/static/media/avatar.d50c9485.jpg",
     "static/media/color_organ.jpg": "/static/media/color_organ.8811d99d.jpg",
     "static/media/cppn.png": "/static/media/cppn.4ce37009.png",
+    "static/media/dither.png": "/static/media/dither.a43fb8ea.png",
     "static/media/folding_desk.gif": "/static/media/folding_desk.f46905bb.gif",
     "static/media/img1.jpg": "/static/media/img1.fee8122c.jpg",
     "static/media/img2.jpg": "/static/media/img2.b9648bb4.jpg",
@@ -27,6 +28,8 @@
     "static/media/lamp5.jpg": "/static/media/lamp5.6c794a72.jpg",
     "static/media/lamp6.jpg": "/static/media/lamp6.e1a30ff0.jpg",
     "static/media/narcissus.gif": "/static/media/narcissus.9ab9d1bc.gif",
+    "static/media/nodes1.jpg": "/static/media/nodes1.cacd55fb.jpg",
+    "static/media/nodes2.jpg": "/static/media/nodes2.8f572b59.jpg",
     "static/media/playlist.png": "/static/media/playlist.0526350e.png",
     "static/media/poetry.png": "/static/media/poetry.0699c663.png",
     "static/media/raytrace.png": "/static/media/raytrace.b7face0f.png",
@@ -38,12 +41,13 @@
     "static/media/sju_ars_lycka2.jpg": "/static/media/sju_ars_lycka2.f1d8d703.jpg",
     "static/media/sju_ars_lycka3.jpg": "/static/media/sju_ars_lycka3.d8a56cce.jpg",
     "static/media/sju_ars_lycka4.jpg": "/static/media/sju_ars_lycka4.d2244136.jpg",
+    "static/media/space.png": "/static/media/space.2fa3dd58.png",
     "static/media/this_very_website.png": "/static/media/this_very_website.a79701fe.png"
   },
   "entrypoints": [
     "static/js/runtime-main.693476b2.js",
-    "static/js/2.58b5e900.chunk.js",
+    "static/js/2.6d0e57ea.chunk.js",
     "static/css/main.f7d10b11.chunk.css",
-    "static/js/main.40d45d6f.chunk.js"
+    "static/js/main.bd033fcc.chunk.js"
   ]
 }
