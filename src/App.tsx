@@ -27,6 +27,11 @@ import apples3 from './img/apples3.jpg'
 import robot from './img/robot.jpg'
 import robot1 from './img/robot1.jpg'
 import robot2 from './img/robot2.jpg'
+import space from './img/space.png'
+import dither from './img/dither.png'
+import nodes1 from './img/nodes1.jpg'
+import nodes2 from './img/nodes2.jpg'
+
 
 interface Link {
   text: string;
@@ -164,6 +169,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Geometry nodes galore",
+          images: [space, nodes1, dither, nodes2],
+          intro: "I have been making some animations in Blender using the new geometry nodes in 3.0. These have been inspired by the first few prompts from Genuary 2022.",
+          links: [{text: "Instagram", "url": "https://www.instagram.com/p/CYP4x0PFFbg/"}, {text: "Instagram", url: "https://www.instagram.com/p/CY0m5SxsotI/"}]
+        },
         {
           title: "Line plotter robot",
           images: [robot, robot1, robot2],
