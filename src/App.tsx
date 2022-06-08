@@ -31,6 +31,7 @@ import space from './img/space.png'
 import dither from './img/dither.png'
 import nodes1 from './img/nodes1.jpg'
 import nodes2 from './img/nodes2.jpg'
+import kroki from './img/kroki.jpg'
 
 
 interface Link {
@@ -169,6 +170,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "En krokus, flera kroki",
+          images: [kroki],
+          intro: "Using my growing proficiency in blender to illustrate a weird pun in swedish",
+          links: [{text: "Instagram", url: "https://www.instagram.com/p/Cci7j9zstXf/"}]
+        },
         {
           title: "Geometry nodes galore",
           images: [space, nodes1, dither, nodes2],
