@@ -32,7 +32,7 @@ import dither from './img/dither.png'
 import nodes1 from './img/nodes1.jpg'
 import nodes2 from './img/nodes2.jpg'
 import kroki from './img/kroki.jpg'
-
+import dice from './img/dice.jpg'
 
 interface Link {
   text: string;
@@ -170,6 +170,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Dice rolling game",
+          images: [dice],
+          intro: "GMTK:s game jam with the theme \"roll the dice\" was just the excuse I needed to learn some game development in Godot",
+          links: [{text: "Try", url: "https://demborg.se/rollTheDice"}, {text: "Source", url: "https://github.com/Demborg/rollTheDice"}, {text: "Jam", url: "https://itch.io/jam/gmtk-jam-2022"}]
+        },
         {
           title: "En krokus, flera kroki",
           images: [kroki],
