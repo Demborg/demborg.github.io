@@ -33,6 +33,7 @@ import nodes1 from './img/nodes1.jpg'
 import nodes2 from './img/nodes2.jpg'
 import kroki from './img/kroki.jpg'
 import dice from './img/dice.jpg'
+import dot from './img/dot.gif'
 
 interface Link {
   text: string;
@@ -170,6 +171,12 @@ const App: React.FC = () => {
     <div className="container mx-auto">
       <Header/>
       <Grid posts={[
+        {
+          title: "Cheap copies",
+          images: [dot],
+          intro: "I was really intruiged by some NFT art works displayed at the photograhic museum in stockholm so I tried to recreate them in blender.",
+          links: [{text: "Fotografiska", url: "https://www.fotografiska.com/sto/en/utstallningar/somewhere-ethereal/"}, {text: "Instagram", url: "https://www.instagram.com/p/ChMRiHsM_dS/"}]
+        },
         {
           title: "Dice rolling game",
           images: [dice],
