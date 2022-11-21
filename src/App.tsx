@@ -6,20 +6,12 @@ interface Link {
   url: string;
 }
 
-interface Images {
-  images: string[];
-}
-
 interface Post {
   title: string;
   images: string[];
   intro: string;
   body?: string;
   links: Link[];
-}
-
-interface Page {
-  posts: Post[];
 }
 
 function Header() {
@@ -31,15 +23,17 @@ function Header() {
   )
 }
 
-function LinkButton(props: Link) {
+function LinkButton(props: { link: Link }) {
   return (
-    <a href={props.url}>
-      <span className="inline-block hover:bg-gray-700 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold hover:text-gray-200 text-gray-700 mr-2">{props.text}</span>
+    <a href={props.link.url}>
+      <span className="inline-block hover:bg-gray-700 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold hover:text-gray-200 text-gray-700 mr-2">
+        {props.link.text}
+      </span>
     </a>
   )
 }
 
-function ImageDisplay(props: Images) {
+function ImageDisplay(props: { images: string[] }) {
   const [counter, setCounter] = useState(0)
   useEffect(() => { setInterval(() => setCounter(counter + 1), 6000) })
   const imgIdx = counter % props.images.length
@@ -53,29 +47,30 @@ function ImageDisplay(props: Images) {
   )
 }
 
-function Card(props: Post) {
+function Card(props: { post: Post }) {
+  const post = props.post
   const [hidden, setHidden] = useState(true)
   return (
     <div className="rounded overflow-hidden shadow-lg" onMouseEnter={() => setHidden(false)} onMouseLeave={() => setHidden(true)}>
-      <ImageDisplay images={props.images} />
+      <ImageDisplay images={post.images} />
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{props.title}</div>
-        {props.links.map((link, index) => <LinkButton text={link.text} url={link.url} key={index} />)}
+        <div className="font-bold text-xl mb-2">{post.title}</div>
+        {post.links.map((link, index) => <LinkButton link={link} key={index} />)}
         <p className={`text-gray-700 text-base ${hidden ? 'lg:hidden xl:hidden' : ''}`}>
-          {props.intro}
+          {post.intro}
         </p>
       </div>
     </div>
   )
 }
 
-function Grid(props: Page) {
+function Grid(props: { posts: Post[] }) {
   return (
     <div className="flex flex-wrap">
       {props.posts.map(
         (post, index) =>
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 hover:zoom-10 p-4" key={index}>
-            <Card title={post.title} images={post.images} intro={post.intro} links={post.links} key={index} />
+            <Card post={post} />
           </div>
       )}
     </div>
