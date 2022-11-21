@@ -78,7 +78,7 @@ class ImageDisplay extends React.Component<Images, ImageState> {
           {images.map((image, idx) => 
             <img src={image} alt={image} className={
               "absolute top-0 right-0 w-full transition duration-500 ease-in-out " +
-              (imgIdx === idx ? "opacity-100" : "opacity-0")}/>)}
+              (imgIdx === idx ? "opacity-100" : "opacity-0")} key={idx}/>)}
         </div>
     )
   }
@@ -105,7 +105,7 @@ class Card extends React.Component<Post, CardState> {
         <ImageDisplay images={images}/>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
-          {links.map(link => <LinkButton text={link.text} url={link.url}/>)}
+          {links.map((link, index) => <LinkButton text={link.text} url={link.url} key={index}/>)}
           <p className={`text-gray-700 text-base ${this.state.hidden ? 'lg:hidden xl:hidden' : ''}`}>
             {intro}
           </p>
@@ -121,9 +121,9 @@ class Grid extends React.Component<Page, {}> {
     return (
       <div className="flex flex-wrap">
         {posts.map(
-          post => 
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 hover:zoom-10 p-4">
-          <Card title={post.title} images={post.images} intro={post.intro} links={post.links}/>
+          (post, index) => 
+        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 hover:zoom-10 p-4" key={index}>
+          <Card title={post.title} images={post.images} intro={post.intro} links={post.links} key={index}/>
         </div>
           )}
       </div>
