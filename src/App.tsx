@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import posts from "./posts.json"
 import avatar from "./img/avatar.jpg"
+import './App.css'
 
 interface Link {
   text: string;
@@ -50,14 +51,13 @@ function ImageDisplay(props: { images: string[] }) {
 
 function Card(props: { post: Post }) {
   const post = props.post
-  const [hidden, setHidden] = useState(true)
   return (
-    <div className="rounded overflow-hidden shadow-lg" onMouseEnter={() => setHidden(false)} onMouseLeave={() => setHidden(true)}>
+    <div className="rounded overflow-hidden shadow-lg Card">
       <ImageDisplay images={post.images} />
-      <div className="px-6 py-4">
+      <div className="px-6 py-4 Stuff">
         <div className="font-bold text-xl mb-2">{post.title}</div>
         {post.links.map((link, index) => <LinkButton link={link} key={index} />)}
-        <p className={`text-gray-700 text-base ${hidden ? 'lg:hidden xl:hidden' : ''}`}>
+        <p className={"text-gray-700 text-base Text"}>
           {post.intro}
         </p>
       </div>
@@ -70,7 +70,7 @@ function Grid(props: { posts: Post[] }) {
     <div className="flex flex-wrap">
       {props.posts.map(
         (post, index) =>
-          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 hover:zoom-10 p-4" key={index}>
+          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4 p-4 mx-auto" key={index}>
             <Card post={post} />
           </div>
       )}
