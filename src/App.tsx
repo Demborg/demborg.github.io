@@ -37,7 +37,7 @@ function LinkButton(props: { link: Link }) {
 
 function ImageDisplay(props: { images: string[] }) {
   const [counter, setCounter] = useState(0)
-  useEffect(() => { setInterval(() => setCounter(counter + 1), 6000) }, [counter])
+  useEffect(() => { setInterval(() => setCounter(counter => counter + 1), 6000) }, [])
   const imgIdx = counter % props.images.length
   return (
     <div className="relative w-full pt-1/1" onClick={() => setCounter(counter + 1)}>
