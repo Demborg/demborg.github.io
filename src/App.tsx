@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import posts from "./posts.json"
+import avatar from "./img/avatar.jpg"
 
 interface Link {
   text: string;
@@ -17,7 +18,7 @@ interface Post {
 function Header() {
   return (
     <div className="bg-gray-800 overflow-hidden shadow-lg">
-      <img className="inline-block text-gray-700 rounded-full w-20 m-4" src={process.env.PUBLIC_URL + "/img/avatar.jpg"} alt="" />
+      <img className="inline-block text-gray-700 rounded-full w-20 m-4" src={avatar} alt="" />
       <div className="inline-block text-3xl text-gray-300 font-semibold px-4 py-2 m-2">Axel Demborg</div>
     </div>
   )
