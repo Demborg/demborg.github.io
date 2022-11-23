@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import posts from "./posts.json"
 import avatar from "./img/avatar.jpg"
+import linkedin from "./img/in.png"
+import github from "./img/github.png"
+import instagram from "./img/insta.png"
 import './App.css'
 
 interface Link {
@@ -19,8 +22,15 @@ interface Post {
 function Header() {
   return (
     <div className="bg-gray-800 overflow-hidden shadow-lg">
-      <img className="inline-block text-gray-700 rounded-full w-20 m-4" src={avatar} alt="" />
-      <div className="inline-block text-3xl text-gray-300 font-semibold px-4 py-2 m-2">Axel Demborg</div>
+      <img className="inline-block rounded-full w-20 m-4 Avatar" src={avatar} alt="" />
+      <div className="inline-block text-3xl text-gray-300 font-semibold px-4 py-2 m-2">
+        Axel Demborg
+        <div className='m-0 p-0'>
+          <a href='https://www.linkedin.com/in/axel-demborg-9810a0b5/'><img className="Social inline-block py-0 px-2 w-10" src={linkedin} width={20} alt="linkedin"/></a>
+          <a href='https://www.github.com/demborg'><img className="Social inline-block py-0 px-2 w-10" src={github} width={20} alt="github"/></a>
+          <a href='https://www.instagram.com/axeldemborg/'><img className="Social inline-block py-0 px-2 w-10" src={instagram} width={20} alt="instagram"/></a>
+        </div>
+      </div>
     </div>
   )
 }

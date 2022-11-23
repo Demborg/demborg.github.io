@@ -1,3 +1,13 @@
+.Avatar {
+    vertical-align: top;
+}
+.Social {
+    transition: all 0.5s;
+    opacity: 0.8;
+}
+.Social:hover {
+    opacity: 1;
+}
 .Card {
     transition: transform 2s;
     width: 100%
