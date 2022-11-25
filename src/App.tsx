@@ -156,7 +156,7 @@ function VideoDisplay(props: { video: string }) {
   return (
     <div className="relative w-full pt-1/1 overflow-hidden ">
       <video
-      autoPlay={true}
+        autoPlay={true}
         muted={true}
         playsInline={true}
         loop={true}
