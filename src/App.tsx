@@ -1,6 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import posts from "./posts.json";
-import avatar from "./img/avatar.jpg";
+import avatarClose from "./img/avatarClose.jpg";
+import avatar0 from "./img/avatar0.jpg";
+import avatar1 from "./img/avatar1.jpg";
+import avatar2 from "./img/avatar2.jpg";
+import avatar3 from "./img/avatar3.jpg";
+import avatar4 from "./img/avatar4.jpg";
+import avatar5 from "./img/avatar5.jpg";
+import avatar6 from "./img/avatar6.jpg";
+import avatar7 from "./img/avatar7.jpg";
 import linkedin from "./img/in.png";
 import github from "./img/github.png";
 import instagram from "./img/insta.png";
@@ -19,12 +27,59 @@ interface Post {
   links: Link[];
 }
 
+const getImage = (direction: number, close: Boolean) => {
+  if (close) {
+    return avatarClose;
+  }
+  switch (direction) {
+    case 0:
+      return avatar0;
+    case 1:
+      return avatar1;
+    case 2:
+      return avatar2;
+    case 3:
+      return avatar3;
+    case 4:
+      return avatar4;
+    case -4:
+      return avatar4;
+    case -3:
+      return avatar5;
+    case -2:
+      return avatar6;
+    case -1:
+      return avatar7;
+    case -0:
+      return avatar0;
+    default:
+      return avatarClose;
+  }
+};
+
 function Header() {
+  const [direction, setDirection] = useState(0);
+  const [close, setClose] = useState(true);
+  const imgRef = useRef<HTMLImageElement>(null);
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (!imgRef.current) {
+        return;
+      }
+      const bbox = imgRef.current.getBoundingClientRect();
+      const x = e.clientX - bbox.left - bbox.width / 2;
+      const y = e.clientY - bbox.top - bbox.height / 2;
+      setDirection(Math.round(((180 / Math.PI) * Math.atan2(y, x)) / 45));
+      setClose(Math.hypot(x, y) < bbox.width / 2);
+    };
+    window.addEventListener("mousemove", handler);
+  }, []);
   return (
     <div className="bg-gray-800 overflow-hidden shadow-lg">
       <img
+        ref={imgRef}
         className="inline-block rounded-full w-20 m-4 Avatar"
-        src={avatar}
+        src={getImage(direction, close)}
         alt=""
       />
       <div className="inline-block text-3xl text-gray-300 font-semibold px-4 py-2 m-2">
