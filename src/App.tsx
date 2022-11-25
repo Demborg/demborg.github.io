@@ -22,6 +22,7 @@ interface Link {
 interface Post {
   title: string;
   images: string[];
+  video?: string;
   intro: string;
   body?: string;
   links: Link[];
@@ -151,11 +152,32 @@ function ImageDisplay(props: { images: string[] }) {
   );
 }
 
+function VideoDisplay(props: { video: string }) {
+  return (
+    <div className="relative w-full pt-1/1 overflow-hidden ">
+      <video
+      autoPlay={true}
+        muted={true}
+        playsInline={true}
+        loop={true}
+        controls={false}
+        className={"absolute top-0 right-0 w-full"}
+      >
+        <source src={props.video} />
+      </video>
+    </div>
+  );
+}
+
 function Card(props: { post: Post }) {
   const post = props.post;
   return (
     <div className="rounded overflow-hidden shadow-lg Card">
-      <ImageDisplay images={post.images} />
+      {post.video ? (
+        <VideoDisplay video={post.video} />
+      ) : (
+        <ImageDisplay images={post.images} />
+      )}
       <div className="px-6 py-4 Stuff">
         <div className="font-bold text-xl mb-2">{post.title}</div>
         {post.links.map((link, index) => (
