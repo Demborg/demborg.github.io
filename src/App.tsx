@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import posts from "./posts.json";
 import avatarClose from "./img/avatarClose.jpg";
+import avatarBlep from "./img/avatarBlep.jpg";
 import avatar0 from "./img/avatar0.jpg";
 import avatar1 from "./img/avatar1.jpg";
 import avatar2 from "./img/avatar2.jpg";
@@ -28,8 +29,11 @@ interface Post {
   links: Link[];
 }
 
-const getImage = (direction: number, close: Boolean) => {
-  if (close) {
+const getImage = (direction: number, distance: number) => {
+  if (distance < 0.2) {
+    return avatarBlep;
+  }
+  if (distance < 1) {
     return avatarClose;
   }
   switch (direction) {
@@ -60,7 +64,7 @@ const getImage = (direction: number, close: Boolean) => {
 
 function Header() {
   const [direction, setDirection] = useState(0);
-  const [close, setClose] = useState(true);
+  const [distance, setDistance] = useState(0.9);
   const imgRef = useRef<HTMLImageElement>(null);
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -71,7 +75,7 @@ function Header() {
       const x = e.clientX - bbox.left - bbox.width / 2;
       const y = e.clientY - bbox.top - bbox.height / 2;
       setDirection(Math.round(((180 / Math.PI) * Math.atan2(y, x)) / 45));
-      setClose(Math.hypot(x, y) < bbox.width / 2);
+      setDistance(Math.hypot(x, y) / (bbox.width / 2));
     };
     window.addEventListener("mousemove", handler);
   }, []);
@@ -80,7 +84,7 @@ function Header() {
       <img
         ref={imgRef}
         className="inline-block rounded-full w-20 m-4 Avatar"
-        src={getImage(direction, close)}
+        src={getImage(direction, distance)}
         alt=""
       />
       <div className="inline-block text-3xl text-gray-300 font-semibold px-4 py-2 m-2">
