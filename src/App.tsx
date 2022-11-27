@@ -29,12 +29,19 @@ interface Post {
   links: Link[];
 }
 
-const getImage = (direction: number, distance: number) => {
-  if (distance < 0.2) {
-    return avatarBlep;
-  }
-  if (distance < 1) {
-    return avatarClose;
+enum Distance {
+  touching,
+  close,
+  distant
+}
+
+const getImage = (direction: number, distance: Distance) => {
+  switch (distance) {
+    case Distance.touching:
+      return avatarBlep
+    case Distance.close:
+      return avatarClose
+    default:
   }
   switch (direction) {
     case 0:
@@ -64,7 +71,7 @@ const getImage = (direction: number, distance: number) => {
 
 function Header() {
   const [direction, setDirection] = useState(0);
-  const [distance, setDistance] = useState(0.9);
+  const [distance, setDistance] = useState(Distance.close);
   const imgRef = useRef<HTMLImageElement>(null);
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -75,7 +82,14 @@ function Header() {
       const x = e.clientX - bbox.left - bbox.width / 2;
       const y = e.clientY - bbox.top - bbox.height / 2;
       setDirection(Math.round(((180 / Math.PI) * Math.atan2(y, x)) / 45));
-      setDistance(Math.hypot(x, y) / (bbox.width / 2));
+      const distance = Math.hypot(x, y);
+      if (distance < 0.1 * bbox.width) {
+        setDistance(Distance.touching)
+      } else if (distance < 0.5 * bbox.width) {
+        setDistance(Distance.close)
+      } else {
+        setDistance(Distance.distant)
+      }
     };
     window.addEventListener("mousemove", handler);
   }, []);
