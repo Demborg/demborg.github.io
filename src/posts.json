@@ -203,7 +203,7 @@
   },
   {
     "title": "CPPN",
-    "iframe": "https://demborg.se/cppn/",
+    "iframe": "https://demborg.se/cppn/?fullscreen=true",
     "images": ["/img/cppn.png"],
     "intro": "Generative art implemented in tensorflowJS",
     "links": [
