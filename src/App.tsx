@@ -24,6 +24,7 @@ interface Post {
   title: string;
   images: string[];
   video?: string;
+  iframe?: string;
   intro: string;
   body?: string;
   links: Link[];
@@ -187,15 +188,30 @@ function VideoDisplay(props: { video: string }) {
   );
 }
 
+function IframeDisplay(props: { iframe: string }) {
+  return (
+    <div className="relative w-full pt-1/1 overflow-hidden ">
+      <iframe
+        className={"absolute top-0 right-0 w-full h-full"}
+        src={props.iframe}
+        title={props.iframe}
+        scrolling='no'
+      />
+    </div>
+  );
+}
+
 function Card(props: { post: Post }) {
   const post = props.post;
+  let filling = <ImageDisplay images={post.images} />
+  if (post.iframe) {
+    filling = <IframeDisplay iframe={post.iframe}/>
+  } else if (post.video) {
+    filling = <VideoDisplay video={post.video}/>
+  }
   return (
     <div className="rounded overflow-hidden shadow-lg Card">
-      {post.video ? (
-        <VideoDisplay video={post.video} />
-      ) : (
-        <ImageDisplay images={post.images} />
-      )}
+      {filling}
       <div className="px-6 py-4 Stuff">
         <div className="font-bold text-xl mb-2">{post.title}</div>
         {post.links.map((link, index) => (
