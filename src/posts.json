@@ -135,6 +135,7 @@
   {
     "title": "Project Narcissus",
     "images": ["/img/narcissus.gif"],
+    "iframe": "https://demborg.se/narcissus/?fullscreen=true",
     "intro": "Feeding my inner narcissist by training a VAE to generate (chockingly bad) \"selfies\" of myself",
     "links": [
       { "text": "Try", "url": "https://demborg.se/narcissus" },
