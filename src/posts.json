@@ -1,5 +1,17 @@
 [
   {
+    "title": "Genuary 2023",
+    "images": [],
+    "intro": "Staring the year of in a good way by doing some prompts from Genuary in my favourite software - Blender.",
+    "links": [
+      {
+        "text": "Genuary",
+        "url": "https://genuary.art/"
+      }
+    ],
+    "video": "/video/loop.mp4"
+  },
+  {
     "title": "Advent of procastination 2022",
     "images": [],
     "intro": "Yet an other year I manage to distract myself from actually completing the puzzles. This time by trying (and arguably failing) to make the solutions into a \"beutiful\" website.",
