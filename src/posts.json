@@ -1,5 +1,17 @@
 [
   {
+    "title": "Brownian motion for plotter",
+    "images": [],
+    "intro": "Experimenting with brownian motion based programs for my plotter to make it independent for my comming exhibtion at konstal C:s centrifug",
+    "links": [
+      {
+        "text": "Cetnrifug",
+        "url": "https://www.konsthallc.se/en/info/centrifug"
+      }
+    ],
+    "iframe": "https://demborg.se/brownian-plots/"
+  },
+  {
     "title": "Genuary 2023",
     "images": [],
     "intro": "Staring the year of in a good way by doing some prompts from Genuary in my favourite software - Blender.",
