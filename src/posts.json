@@ -6,10 +6,10 @@
     "links": [
       {
         "text": "Fullscreen",
-        "url": "https://demborg.se/hilber-perlin/"
+        "url": "https://demborg.se/hilbert-perlin/"
       }
     ],
-    "iframe": "https://demborg.se/hilber-perlin/"
+    "iframe": "https://demborg.se/hilbert-perlin/"
   },
   {
     "title": "Brownian motion for plotter",
