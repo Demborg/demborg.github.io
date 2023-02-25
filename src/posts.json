@@ -1,12 +1,28 @@
 [
   {
-    "title": "Brownian motion for plotter",
+    "title": "Hilbert curves and perlin noise",
     "images": [],
-    "intro": "Experimenting with brownian motion based programs for my plotter to make it independent for my comming exhibtion at konstal C:s centrifug",
+    "intro": "Hilbert curves driven by some perlin noise in the browser",
     "links": [
       {
-        "text": "Cetnrifug",
+        "text": "Fullscreen",
+        "url": "https://demborg.se/hilber-perlin/"
+      }
+    ],
+    "iframe": "https://demborg.se/hilber-perlin/"
+  },
+  {
+    "title": "Brownian motion for plotter",
+    "images": [],
+    "intro": "Experimenting with brownian motion based programs for my plotter to make it independent for my comming exhibtion at konsthall C:s centrifug",
+    "links": [
+      {
+        "text": "Centrifug",
         "url": "https://www.konsthallc.se/en/info/centrifug"
+      },
+      {
+        "text": "Fullscreen",
+        "url": "https://demborg.se/brownian-plots/"
       }
     ],
     "iframe": "https://demborg.se/brownian-plots/"
