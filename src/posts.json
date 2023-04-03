@@ -1,5 +1,16 @@
 [
   {
+    "title": "Teewee: the art exhibition",
+    "images": ["img/teewee1.jpg", "img/teewee2.jpg", "img/teewee3.jpg","img/teewee4.jpg"],
+    "intro": "This past week I have been doing one of my scariest projects as of yet; hosting an art exhibition at Konsthall C in lovely Hökarängen.",
+    "links": [
+      {
+        "text": "Details",
+        "url": "https://www.konsthallc.se/program/teewee"
+      }
+    ]
+  },
+  {
     "title": "Hilbert curves and perlin noise",
     "images": [],
     "intro": "Hilbert curves driven by some perlin noise in the browser",
