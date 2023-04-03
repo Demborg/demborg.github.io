@@ -1,5 +1,21 @@
 [
   {
+    "title": "Jazz-GPT",
+    "images": [],
+    "intro": "Trying desperatley to stay with the times I colaborated with chat-gpt to create a website for generative \"jazz\".",
+    "links": [
+      {
+        "text": "Fullscreen",
+        "url": "https://demborg.se/gpt-jazz/"
+      },
+      {
+        "text": "Source",
+        "url": "https://github.com/Demborg/gpt-jazz/"
+      }
+    ],
+    "iframe": "https://github.com/Demborg/gpt-jazz/"
+  },
+  {
     "title": "Teewee: the art exhibition",
     "images": ["img/teewee1.jpg", "img/teewee2.jpg", "img/teewee3.jpg","img/teewee4.jpg"],
     "intro": "This past week I have been doing one of my scariest projects as of yet; hosting an art exhibition at Konsthall C in lovely Hökarängen.",
