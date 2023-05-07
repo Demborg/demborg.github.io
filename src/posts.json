@@ -1,5 +1,11 @@
 [
   {
+    "title": "Hamlight",
+    "images": ["/img/hamlight1.jpg", "/img/hamlight2.jpg", "/img/hamlight3.jpg", "/img/hamlight4.jpg"],
+    "intro": "Building a luminous Hamlet to keep my idea lamp some company and to learn about how to work with clay.",
+    "links": []
+  },
+  {
     "title": "Jazz-GPT",
     "images": [],
     "intro": "Trying desperatley to stay with the times I colaborated with chat-gpt to create a website for generative \"jazz\".",
