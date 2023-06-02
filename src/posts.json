@@ -1,5 +1,21 @@
 [
   {
+    "title": "Habit tracker",
+    "images": [],
+    "intro": "Got a bit curious to learn rust after i realized I could do full stack applications fully in it. My first experiment is building a habit tracker.",
+    "links": [
+      {
+        "text": "Fullscreen",
+        "url": "https://habits.shuttleapp.rs/"
+      },
+      {
+        "text": "Source",
+        "url": "https://github.com/Demborg/habits/"
+      }
+    ],
+    "iframe": "https://habits.shuttleapp.rs/"
+  },
+  {
     "title": "Hamlight",
     "images": ["/img/hamlight1.jpg", "/img/hamlight2.jpg", "/img/hamlight3.jpg", "/img/hamlight4.jpg"],
     "intro": "Building a luminous Hamlet to keep my idea lamp some company and to learn about how to work with clay.",
