@@ -1,5 +1,12 @@
 [
   {
+    "title": "Game of light",
+    "images": [],
+    "intro": "Learning about the new simulations nodes in Blender 3.6 by messing around with a hexagonal game of life.",
+    "links": [{"text": "Game of life", "url": "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"}],
+    "video": "/video/life.mp4"
+  },
+  {
     "title": "Habit tracker",
     "images": ["/img/habits.png"],
     "intro": "Got a bit curious to learn rust after i realized I could do full stack applications fully in it. My first experiment is building a habit tracker.",
