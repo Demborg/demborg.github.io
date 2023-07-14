@@ -1,5 +1,15 @@
 [
   {
+    "title": "Goon Quest",
+    "images": ["/img/goon.jpg"],
+    "intro": "Another GMTK game jam another shitty game. This time sound effects was one of the things I got the most distracted by, so please play with sound on.",
+    "links": [
+      { "text": "Try", "url": "https://demborg.se/goon-quest" },
+      { "text": "Source", "url": "https://github.com/Demborg/goon-quest" },
+      { "text": "Jam", "url": "https://itch.io/jam/gmtk-jam-2023" }
+    ]
+  },
+  {
     "title": "Game of light",
     "images": [],
     "intro": "Learning about the new simulations nodes in Blender 3.6 by messing around with a hexagonal game of life.",
