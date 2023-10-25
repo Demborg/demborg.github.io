@@ -1,5 +1,14 @@
 [
   {
+    "title": "3d printed shoes?!",
+    "intro": "Inspired by a 3d printing conference my job sent me to and the fancy Zellerfeld shoes I got to try there I tried to design my own shoes using my 3d scanned feet and blender geometry nodes for printing on an Artillery Sidewinder X2 printer.",
+    "images": ["/img/shoes0.jpg", "/img/shoes1.jpg"],
+    "links": [
+      {"text": "Inspiration", "url": "https://www.zellerfeld.com/"},
+      {"text": "Foot scanning", "url": "https://volumental.com/"}
+    ]
+  },
+  {
     "title": "Goon Quest",
     "images": ["/img/goon.jpg"],
     "intro": "Another GMTK game jam another shitty game. This time sound effects was one of the things I got the most distracted by, so please play with sound on.",
