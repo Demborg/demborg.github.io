@@ -25,6 +25,6 @@
 }
 
 .Card:hover > .Stuff > .Text {
-    max-height: 10rem;
+    max-height: 20rem;
     opacity: 1;
 }
