@@ -1,5 +1,15 @@
 [
   {
+    "title": "Virtual kinetic sculpture",
+    "images": [],
+    "intro": "A colegue of mine wanted to rebuild a fantastic kinetic sculpture as a hackathon project. I helped him out with visualizing it using blender geometry nodes.",
+    "links": [
+      { "text": "Original", "url": "https://www.reubenmargolin.com/waves/interlaced/" },
+      { "text": ".blend", "url": "https://github.com/Demborg/blendfiles/tree/main/patrik" }
+    ],
+    "video": "/video/patrik.mp4"
+  },
+  {
     "title": "3d printed shoes?!",
     "intro": "Inspired by a 3d printing conference my job sent me to and the fancy Zellerfeld shoes I got to try there I tried to design my own shoes using my 3d scanned feet and blender geometry nodes for printing on an Artillery Sidewinder X2 printer.",
     "images": ["/img/shoes0.jpg", "/img/shoes1.jpg"],
