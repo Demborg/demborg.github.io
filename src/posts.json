@@ -1,5 +1,12 @@
 [
   {
+    "title": "Singalingo",
+    "images": [],
+    "iframe": "https://singalingo.se/",
+    "intro": "I have recently started singing in a very amature-ish choir and wanted some way of learning musical notation etc. To this end me and a colegue of mine built this website for learning to sing.",
+    "links": [{"text": "Try", "url": "https://singalingo.se/"}, {"text": "Source", "url": "https://github.com/Demborg/singalingo"}] 
+  },
+  {
     "title": "Virtual kinetic sculpture",
     "images": [],
     "intro": "A colegue of mine wanted to rebuild a fantastic kinetic sculpture as a hackathon project. I helped him out with visualizing it using blender geometry nodes.",
