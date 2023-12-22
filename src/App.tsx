@@ -195,6 +195,7 @@ function IframeDisplay(props: { iframe: string }) {
         className={"absolute top-0 right-0 w-full h-full"}
         src={props.iframe}
         title={props.iframe}
+        allow="microphone"
         scrolling='no'
       />
     </div>
