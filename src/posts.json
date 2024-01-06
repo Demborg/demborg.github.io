@@ -1,5 +1,11 @@
 [
   {
+    "title": "Genuary 2024",
+    "images": ["/img/lorentz.png", "/img/fassett.jpg", "/img/c20.jpg"],
+    "intro": "Yet again I try to participate a bit in the procedural month of genuary. This time leaning a bit into the javascript skills I have picked up over the year but also keeping true to my darling blender.",
+    "links": [{"text": "Fassett", "url": "https://demborg.se/fassett"}, {"text": "C20", "url": "https://demborg.se/c20"}]
+  },
+  {
     "title": "Singalingo",
     "images": [],
     "iframe": "https://singalingo.se/",
