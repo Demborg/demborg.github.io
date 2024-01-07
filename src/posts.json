@@ -1,9 +1,24 @@
 [
   {
-    "title": "Genuary 2024",
-    "images": ["/img/lorentz.png", "/img/fassett.jpg", "/img/c20.jpg"],
-    "intro": "Yet again I try to participate a bit in the procedural month of genuary. This time leaning a bit into the javascript skills I have picked up over the year but also keeping true to my darling blender.",
-    "links": [{"text": "Fassett", "url": "https://demborg.se/fassett"}, {"text": "C20", "url": "https://demborg.se/c20"}]
+    "title": "C20",
+    "images": [],
+    "iframe": "https://demborg.se/c20/",
+    "intro": "The third day of Genuary 2024 became and homage to the train that has taken me basically everywhere I have wanted to go. SL:s lovely C20, may you roll on forever.",
+    "links": [{"text": "Original", "url": "https://sv.wikipedia.org/wiki/C20_(tunnelbanevagn)#Bilder_interi%C3%B6r"}, {"text": "Fullscreen", "url": "https://demborg.se/c20"}]
+  },
+  {
+    "title": "Fassett",
+    "images": [],
+    "iframe": "https://demborg.se/fassett/embed",
+    "intro": "For the second day of Genuary 2024 I got inspired by a lovely pattern sample from Kaffe Fassett and tried to make procedural tiling patterns and paletts.",
+    "links": [ {"text": "Inspiration", "url": "https://www.kaffefassett.com/"}, {"text": "Fulscreen", "url": "https://demborg.se/fassett"}]
+  },
+  {
+    "title": "Patricles",
+    "images": [],
+    "video": "/video/lorentz.mp4",
+    "intro": "Fot the first day of Genuary 2024 I created a Lorentz attractor using blenders simulation nodes.",
+    "links": [{"text": ".blend", "url": "https://github.com/Demborg/blendfiles/tree/main/lorentz"}, {"text": "Genuary", "url": "https://genuary.art"}]
   },
   {
     "title": "Singalingo",
@@ -131,7 +146,7 @@
     "links": [
       {
         "text": "Genuary",
-        "url": "https://genuary.art/"
+        "url": "https://genuary.art/2023"
       }
     ],
     "video": "/video/loop.mp4"
