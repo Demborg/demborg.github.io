@@ -17,7 +17,7 @@
     "title": "Patricles",
     "images": [],
     "video": "/video/lorentz.mp4",
-    "intro": "Fot the first day of Genuary 2024 I created a Lorentz attractor using blenders simulation nodes.",
+    "intro": "For the first day of Genuary 2024 I created a Lorentz attractor using blenders simulation nodes.",
     "links": [{"text": ".blend", "url": "https://github.com/Demborg/blendfiles/tree/main/lorentz"}, {"text": "Genuary", "url": "https://genuary.art"}]
   },
   {
