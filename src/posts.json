@@ -1,5 +1,12 @@
 [
   {
+    "title": "Aquarelle",
+    "images": [],
+    "iframe": "https://demborg.se/aquarelle/",
+    "intro": "Got inspired by the wonderous flows of water colors and tried my hand at faking the effect in software. This takes a lot of inspiration from tylerxhobbs nicely written blog on the subject.",
+    "links": [{"text": "Original", "url": "https://tylerxhobbs.com/essays/2017/a-generative-approach-to-simulating-watercolor-paints"}, {"text": "Fullscreen", "url": "https://demborg.se/aquarelle"}]
+  },
+  {
     "title": "C20",
     "images": [],
     "iframe": "https://demborg.se/c20/",
