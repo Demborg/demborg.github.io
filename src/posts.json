@@ -1,5 +1,14 @@
 [
   {
+    "title": "Kintsugi",
+    "intro": "Mending a broken teapot and in turn my own broken heart over the fragility of my precious brewer.",
+    "images": ["/img/teapot1.jpg", "/img/teapot2.jpg"],
+    "links": [
+      {"text": "Kintsugi", "url": "https://en.wikipedia.org/wiki/Kintsugi"},
+      {"text": "Lovely teapots", "url": "https://tea.yukoono.se"}
+    ]
+  },
+  {
     "title": "Aquarelle",
     "images": [],
     "iframe": "https://demborg.se/aquarelle/",
