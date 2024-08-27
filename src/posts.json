@@ -1,5 +1,15 @@
 [
   {
+    "title": "Scale of life",
+    "images": ["/img/scale.jpg"],
+    "intro": "GMTK game jam 2024 proves that third time is not the charm in all things. I think I am having a lot more fun making these games than anyone will ever have playing them. I will let that be my small victory.",
+    "links": [
+      { "text": "Try", "url": "https://demborg.se/scale_of_life" },
+      { "text": "Source", "url": "https://github.com/Demborg/scale_of_life" },
+      { "text": "Jam", "url": "https://itch.io/jam/gmtk-2024" }
+    ]
+  },
+  {
     "title": "Kintsugi",
     "intro": "Mending a broken teapot and in turn my own broken heart over the fragility of my precious brewer.",
     "images": ["/img/teapot1.jpg", "/img/teapot2.jpg"],
