@@ -1,5 +1,13 @@
 [
   {
+    "title": "Luminous fit",
+    "intro": "Spending a two day hackathon repurposing our online shoe recommendation tool to instead recommend real shoes with light! This proved to be a real \"deep stack\" project with everything from 3d mock-ups to solder and frontend code.",
+    "images": ["/img/shelf0.jpg", "/img/shelf1.jpg", "/img/shelf2.jpg", "/img/shelf3.jpg"],
+    "links": [
+      {"url": "https://demo-store.volumental.com/products/saucony-ride-15-tr", "text": "Volumental Online"}
+    ]
+  },
+  {
     "title": "Scale of life",
     "images": ["img/scale.jpg"],
     "intro": "GMTK game jam 2024 proves that third time is not the charm in all things. I think I am having a lot more fun making these games than anyone will ever have playing them. I will let that be my small victory.",
