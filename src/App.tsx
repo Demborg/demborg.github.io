@@ -204,6 +204,7 @@ function IframeDisplay(props: { iframe: string }) {
 
 function Card(props: { post: Post }) {
   const post = props.post;
+  const postID = encodeURI(post.title);
   let filling = <ImageDisplay images={post.images} />
   if (post.iframe) {
     filling = <IframeDisplay iframe={post.iframe}/>
@@ -211,10 +212,10 @@ function Card(props: { post: Post }) {
     filling = <VideoDisplay video={post.video}/>
   }
   return (
-    <div className="rounded overflow-hidden shadow-lg Card">
+    <div className="rounded overflow-hidden shadow-lg Card" id={postID}>
       {filling}
       <div className="px-6 py-4 Stuff">
-        <div className="font-bold text-xl mb-2">{post.title}</div>
+        <div className="font-bold text-xl mb-2"><a href={`#${postID}`}>{post.title}</a></div>
         {post.links.map((link, index) => (
           <LinkButton link={link} key={index} />
         ))}
