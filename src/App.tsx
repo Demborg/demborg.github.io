@@ -202,19 +202,43 @@ function IframeDisplay(props: { iframe: string }) {
   );
 }
 
+function Placeholder() {
+  return (
+    <div className="relative w-full pt-1/1 overflow-hidden ">
+      Loading...
+    </div>
+  );
+}
+
 function Card(props: { post: Post }) {
   const post = props.post;
-  let filling = <ImageDisplay images={post.images} />
-  if (post.iframe) {
-    filling = <IframeDisplay iframe={post.iframe}/>
-  } else if (post.video) {
-    filling = <VideoDisplay video={post.video}/>
+  const postID = encodeURI(post.title);
+  const cardRef = useRef<HTMLDivElement>(null)
+  const [show, setShow] = useState(false)
+
+  let filling = <Placeholder />
+  if (show) {
+    filling = <ImageDisplay images={post.images} />
+    if (post.iframe) {
+      filling = <IframeDisplay iframe={post.iframe}/>
+    } else if (post.video) {
+      filling = <VideoDisplay video={post.video}/>
+    }
   }
+
+  const observer = new IntersectionObserver(() => setShow(true), {})
+
+  useEffect(() => {
+    if (cardRef.current) {
+      observer.observe(cardRef.current)
+    }
+  }, [cardRef])
+
   return (
-    <div className="rounded overflow-hidden shadow-lg Card">
+    <div className="rounded overflow-hidden shadow-lg Card" id={postID} ref={cardRef}>
       {filling}
       <div className="px-6 py-4 Stuff">
-        <div className="font-bold text-xl mb-2">{post.title}</div>
+        <div className="font-bold text-xl mb-2"><a href={`#${postID}`}>{post.title}</a></div>
         {post.links.map((link, index) => (
           <LinkButton link={link} key={index} />
         ))}
