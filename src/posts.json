@@ -1,5 +1,11 @@
 [
   {
+    "title": "Genuary 2025",
+    "intro": "Yet again starting off the year with some generative art. This time we got some webcam effects, some onions and 42 lines of a iterated funciton system",
+    "images": ["/img/genuary25-0.png","/img/genuary25-1.png","/img/genuary25-2.png"],
+    "links": [{"url": "https://genuary.art", "text": "Genuary"}, {"url": "https://demborg.se/genuary25", "text": "Implementations"}]
+  },
+  {
     "title": "Luminous fit",
     "intro": "Spending a two day hackathon repurposing our online shoe recommendation tool to instead recommend real shoes with light! This proved to be a real \"deep stack\" project with everything from 3d mock-ups to solder and frontend code.",
     "images": ["/img/shelf0.jpg", "/img/shelf1.jpg", "/img/shelf2.jpg", "/img/shelf3.jpg"],
