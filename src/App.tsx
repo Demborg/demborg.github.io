@@ -232,7 +232,7 @@ function Card(props: { post: Post }) {
     if (cardRef.current) {
       observer.observe(cardRef.current)
     }
-  }, [cardRef])
+  }, [cardRef, observer])
 
   return (
     <div className="rounded overflow-hidden shadow-lg Card" id={postID} ref={cardRef}>
