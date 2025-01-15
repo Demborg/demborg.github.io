@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import posts from "./posts.json";
 import avatarClose from "./img/avatarClose.jpg";
 import avatarBlep from "./img/avatarBlep.jpg";
@@ -226,7 +226,7 @@ function Card(props: { post: Post }) {
     }
   }
 
-  const observer = new IntersectionObserver(() => setShow(true), {})
+  const observer = useMemo(new IntersectionObserver(() => setShow(true), {}), [])
 
   useEffect(() => {
     if (cardRef.current) {
