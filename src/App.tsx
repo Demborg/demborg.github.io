@@ -226,7 +226,7 @@ function Card(props: { post: Post }) {
     }
   }
 
-  const observer = useMemo(new IntersectionObserver(() => setShow(true), {}), [])
+  const observer = useMemo(() => (new IntersectionObserver(() => setShow(true), {})), [])
 
   useEffect(() => {
     if (cardRef.current) {
