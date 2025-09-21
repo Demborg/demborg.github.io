@@ -1,0 +1,786 @@
+[
+    {
+        "title": "Golden fit",
+        "intro": "With a bit of time over in the hackathon I also made this blender animation, maybe it's about perfect fit?",
+        "links": [],
+        "content": {
+            "kind": "video",
+            "video": "/video/fit.mp4"
+        }
+    },
+    {
+        "title": "Foot comparision",
+        "intro": "For our spring hackathon at work I leveraged our foot scanning application to make a small website for simply comparing two persons feet to each other. The idea behind this was to enable footwear recommendations for peer to peer second hand marketplaces.",
+        "links": [
+            {
+                "url": "https://volumental.github.io/cinderella/compare?sellerId=4d7e7d4d-c509-4496-8e51-f7825286eb7f",
+                "text": "Try it!"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/cinderella-1.png",
+                "/img/cinderella-2.png"
+            ]
+        }
+    },
+    {
+        "title": "Genuary 2025",
+        "intro": "Yet again starting off the year with some generative art. This time we got some webcam effects, some onions and 42 lines of a iterated funciton system",
+        "links": [
+            {
+                "url": "https://genuary.art",
+                "text": "Genuary"
+            },
+            {
+                "url": "https://demborg.se/genuary25",
+                "text": "Implementations"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/genuary25-0.png",
+                "/img/genuary25-1.png",
+                "/img/genuary25-2.png"
+            ]
+        }
+    },
+    {
+        "title": "Luminous fit",
+        "intro": "Spending a two day hackathon repurposing our online shoe recommendation tool to instead recommend real shoes with light! This proved to be a real \"deep stack\" project with everything from 3d mock-ups to solder and frontend code.",
+        "links": [
+            {
+                "url": "https://demo-store.volumental.com/products/saucony-ride-15-tr",
+                "text": "Volumental Online"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/shelf0.jpg",
+                "/img/shelf1.jpg",
+                "/img/shelf2.jpg",
+                "/img/shelf3.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Scale of life",
+        "intro": "GMTK game jam 2024 proves that third time is not the charm in all things. I think I am having a lot more fun making these games than anyone will ever have playing them. I will let that be my small victory.",
+        "links": [
+            {
+                "text": "Try",
+                "url": "https://demborg.se/scale_of_life"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/scale_of_life"
+            },
+            {
+                "text": "Jam",
+                "url": "https://itch.io/jam/gmtk-2024"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "img/scale.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Kintsugi",
+        "intro": "Mending a broken teapot and in turn my own broken heart over the fragility of my precious brewer.",
+        "links": [
+            {
+                "text": "Kintsugi",
+                "url": "https://en.wikipedia.org/wiki/Kintsugi"
+            },
+            {
+                "text": "Lovely teapots",
+                "url": "https://tea.yukoono.se"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/teapot1.jpg",
+                "/img/teapot2.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Aquarelle",
+        "intro": "Got inspired by the wonderous flows of water colors and tried my hand at faking the effect in software. This takes a lot of inspiration from tylerxhobbs nicely written blog on the subject.",
+        "links": [
+            {
+                "text": "Original",
+                "url": "https://tylerxhobbs.com/essays/2017/a-generative-approach-to-simulating-watercolor-paints"
+            },
+            {
+                "text": "Fullscreen",
+                "url": "https://demborg.se/aquarelle"
+            }
+        ],
+        "content": {
+            "kind": "iframe",
+            "url": "https://demborg.se/aquarelle/"
+        }
+    },
+    {
+        "title": "C20",
+        "intro": "The third day of Genuary 2024 became and homage to the train that has taken me basically everywhere I have wanted to go. SL:s lovely C20, may you roll on forever.",
+        "links": [
+            {
+                "text": "Original",
+                "url": "https://sv.wikipedia.org/wiki/C20_(tunnelbanevagn)#Bilder_interi%C3%B6r"
+            },
+            {
+                "text": "Fullscreen",
+                "url": "https://demborg.se/c20"
+            }
+        ],
+        "content": {
+            "kind": "iframe",
+            "url": "https://demborg.se/c20/"
+        }
+    },
+    {
+        "title": "Fassett",
+        "intro": "For the second day of Genuary 2024 I got inspired by a lovely pattern sample from Kaffe Fassett and tried to make procedural tiling patterns and paletts.",
+        "links": [
+            {
+                "text": "Inspiration",
+                "url": "https://www.kaffefassett.com/"
+            },
+            {
+                "text": "Fulscreen",
+                "url": "https://demborg.se/fassett"
+            }
+        ],
+        "content": {
+            "kind": "iframe",
+            "url": "https://demborg.se/fassett/embed"
+        }
+    },
+    {
+        "title": "Patricles",
+        "intro": "For the first day of Genuary 2024 I created a Lorentz attractor using blenders simulation nodes.",
+        "links": [
+            {
+                "text": ".blend",
+                "url": "https://github.com/Demborg/blendfiles/tree/main/lorentz"
+            },
+            {
+                "text": "Genuary",
+                "url": "https://genuary.art"
+            }
+        ],
+        "content": {
+            "kind": "video",
+            "video": "/video/lorentz.mp4"
+        }
+    },
+    {
+        "title": "Singalingo",
+        "intro": "I have recently started singing in a very amature-ish choir and wanted some way of learning musical notation etc. To this end me and a colegue of mine built this website for learning to sing.",
+        "links": [
+            {
+                "text": "Try",
+                "url": "https://singalingo.se/"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/singalingo"
+            }
+        ],
+        "content": {
+            "kind": "iframe",
+            "url": "https://singalingo.se/"
+        }
+    },
+    {
+        "title": "Virtual kinetic sculpture",
+        "intro": "A colegue of mine wanted to rebuild a fantastic kinetic sculpture as a hackathon project. I helped him out with visualizing it using blender geometry nodes.",
+        "links": [
+            {
+                "text": "Original",
+                "url": "https://www.reubenmargolin.com/waves/interlaced/"
+            },
+            {
+                "text": ".blend",
+                "url": "https://github.com/Demborg/blendfiles/tree/main/patrik"
+            }
+        ],
+        "content": {
+            "kind": "video",
+            "video": "/video/patrik.mp4"
+        }
+    },
+    {
+        "title": "3d printed shoes?!",
+        "intro": "Inspired by a 3d printing conference my job sent me to and the fancy Zellerfeld shoes I got to try there I tried to design my own shoes using my 3d scanned feet and blender geometry nodes for printing on an Artillery Sidewinder X2 printer.",
+        "links": [
+            {
+                "text": "Inspiration",
+                "url": "https://www.zellerfeld.com/"
+            },
+            {
+                "text": "Foot scanning",
+                "url": "https://volumental.com/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/shoes0.jpg",
+                "/img/shoes1.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Goon Quest",
+        "intro": "Another GMTK game jam another shitty game. This time sound effects was one of the things I got the most distracted by, so please play with sound on.",
+        "links": [
+            {
+                "text": "Try",
+                "url": "https://demborg.se/goon-quest"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/goon-quest"
+            },
+            {
+                "text": "Jam",
+                "url": "https://itch.io/jam/gmtk-2023"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/goon.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Game of light",
+        "intro": "Learning about the new simulations nodes in Blender 3.6 by messing around with a hexagonal game of life.",
+        "links": [
+            {
+                "text": "Game of life",
+                "url": "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+            }
+        ],
+        "content": {
+            "kind": "video",
+            "video": "/video/life.mp4"
+        }
+    },
+    {
+        "title": "Habit tracker",
+        "intro": "Got a bit curious to learn rust after i realized I could do full stack applications fully in it. My first experiment is building a habit tracker.",
+        "links": [
+            {
+                "text": "Try",
+                "url": "https://habits.shuttleapp.rs/"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/habits/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/habits.png"
+            ]
+        }
+    },
+    {
+        "title": "Hamlight",
+        "intro": "Building a luminous Hamlet to keep my idea lamp some company and to learn about how to work with clay.",
+        "links": [],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/hamlight1.jpg",
+                "/img/hamlight2.jpg",
+                "/img/hamlight3.jpg",
+                "/img/hamlight4.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Jazz-GPT",
+        "intro": "Trying desperatley to stay with the times I colaborated with chat-gpt to create a website for generative \"jazz\".",
+        "links": [
+            {
+                "text": "Fullscreen",
+                "url": "https://demborg.se/gpt-jazz/"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/gpt-jazz/"
+            }
+        ],
+        "content": {
+            "kind": "iframe",
+            "url": "https://demborg.se/gpt-jazz/"
+        }
+    },
+    {
+        "title": "Teewee: the art exhibition",
+        "intro": "This past week I have been doing one of my scariest projects as of yet; hosting an art exhibition at Konsthall C in lovely H\u00f6kar\u00e4ngen.",
+        "links": [
+            {
+                "text": "Details",
+                "url": "https://www.konsthallc.se/program/teewee"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "img/teewee1.jpg",
+                "img/teewee2.jpg",
+                "img/teewee3.jpg",
+                "img/teewee4.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Hilbert curves and perlin noise",
+        "intro": "Hilbert curves driven by some perlin noise in the browser",
+        "links": [
+            {
+                "text": "Fullscreen",
+                "url": "https://demborg.se/hilbert-perlin/"
+            }
+        ],
+        "content": {
+            "kind": "iframe",
+            "url": "https://demborg.se/hilbert-perlin/"
+        }
+    },
+    {
+        "title": "Brownian motion for plotter",
+        "intro": "Experimenting with brownian motion based programs for my plotter to make it independent for my comming exhibtion at konsthall C:s centrifug",
+        "links": [
+            {
+                "text": "Centrifug",
+                "url": "https://www.konsthallc.se/en/info/centrifug"
+            },
+            {
+                "text": "Fullscreen",
+                "url": "https://demborg.se/brownian-plots/"
+            }
+        ],
+        "content": {
+            "kind": "iframe",
+            "url": "https://demborg.se/brownian-plots/"
+        }
+    },
+    {
+        "title": "Genuary 2023",
+        "intro": "Staring the year of in a good way by doing some prompts from Genuary in my favourite software - Blender.",
+        "links": [
+            {
+                "text": "Genuary",
+                "url": "https://genuary.art/2023"
+            }
+        ],
+        "content": {
+            "kind": "video",
+            "video": "/video/loop.mp4"
+        }
+    },
+    {
+        "title": "Advent of procastination 2022",
+        "intro": "Yet an other year I manage to distract myself from actually completing the puzzles. This time by trying (and arguably failing) to make the solutions into a \"beutiful\" website.",
+        "links": [
+            {
+                "text": "Solutions",
+                "url": "https://demborg.se/aoc22/"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/aoc22"
+            }
+        ],
+        "content": {
+            "kind": "iframe",
+            "url": "https://demborg.se/aoc22/"
+        }
+    },
+    {
+        "title": "Animations galore!",
+        "intro": "Messing around with CSS animations and mouse pointer tracking to do some silly animations right here on this website.",
+        "links": [
+            {
+                "text": "CSS",
+                "url": "https://github.com/Demborg/demborg.github.io/commit/ae5765399c63262883467ae6c9446b2090ac900f"
+            },
+            {
+                "text": "Tracking",
+                "url": "https://github.com/Demborg/demborg.github.io/commit/8c1cac0f21aeea2e72a7b8eaf7c1e1977bf81f2a"
+            }
+        ],
+        "content": {
+            "kind": "video",
+            "video": "/video/animation.mp4"
+        }
+    },
+    {
+        "title": "Cheap copies",
+        "intro": "I was really intruiged by some NFT art works displayed at the photograhic museum in stockholm so I tried to recreate them in blender.",
+        "links": [
+            {
+                "text": "Fotografiska",
+                "url": "https://www.fotografiska.com/sto/en/utstallningar/somewhere-ethereal/"
+            },
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/ChMRiHsM_dS/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/dot.gif"
+            ]
+        }
+    },
+    {
+        "title": "Dice rolling game",
+        "intro": "GMTK:s game jam with the theme \"roll the dice\" was just the excuse I needed to learn some game development in Godot",
+        "links": [
+            {
+                "text": "Try",
+                "url": "https://demborg.se/rollTheDice"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/rollTheDice"
+            },
+            {
+                "text": "Jam",
+                "url": "https://itch.io/jam/gmtk-jam-2022"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/dice.jpg"
+            ]
+        }
+    },
+    {
+        "title": "En krokus, flera kroki",
+        "intro": "Using my growing proficiency in blender to illustrate a weird pun in swedish",
+        "links": [
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/Cci7j9zstXf/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/kroki.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Geometry nodes galore",
+        "intro": "I have been making some animations in Blender using the new geometry nodes in 3.0. These have been inspired by the first few prompts from Genuary 2022.",
+        "links": [
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/CYP4x0PFFbg/"
+            },
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/CY0m5SxsotI/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/space.png",
+                "/img/nodes1.jpg",
+                "/img/dither.png",
+                "/img/nodes1.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Line plotter robot",
+        "intro": "Building a little line driven plotter robot from some steppers and old lego as well writing a few different algorithms for converting images to plotter paths.",
+        "links": [
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/line_plotter"
+            },
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/CS7l_AosEba/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/robot.jpg",
+                "/img/robot1.jpg",
+                "/img/robot2.jpg"
+            ]
+        }
+    },
+    {
+        "title": "My first blender render!",
+        "intro": "I just completed my first blender tutorial and was really excited with the resulting bowl of apples. Despite or maybe, because of, its many flaws.",
+        "links": [
+            {
+                "text": "Tutorial",
+                "url": "https://www.youtube.com/watch?v=j14b25SnYRY&list=PL3UWN2F2M2C8-zUjbFlbgtWPQa0NXBsp0"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/apples1.jpg",
+                "/img/apples2.jpg",
+                "/img/apples3.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Python poetry",
+        "intro": "I was embarrassingly proud of some of my solutions to this years advent of code puzzles. Pretentiously I call them \"python poetry\"",
+        "links": [
+            {
+                "text": "Problem",
+                "url": "https://adventofcode.com/2020/day/4"
+            },
+            {
+                "text": "Solution",
+                "url": "https://github.com/Demborg/aoc20/blob/main/4.py"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/poetry.png"
+            ]
+        }
+    },
+    {
+        "title": "Scope face",
+        "intro": "Showing a webcam feed on a oscilloscope screen by converting it to terrible sound",
+        "links": [
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/scope-face"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/scope.gif"
+            ]
+        }
+    },
+    {
+        "title": "Lamps",
+        "intro": "Making me some lamps to bring more light into my new apartment",
+        "links": [
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/CDqzMN7FAqi/"
+            },
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/CDmik66F2ng/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/lamp1.jpg",
+                "/img/lamp2.jpg",
+                "/img/lamp3.jpg",
+                "/img/lamp4.jpg",
+                "/img/lamp5.jpg",
+                "/img/lamp6.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Swapping images",
+        "intro": "Making it possible to swap between multiple images on this site",
+        "links": [
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/demborg.github.io/pull/7"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/img1.jpg",
+                "/img/img2.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Project Narcissus",
+        "intro": "Feeding my inner narcissist by training a VAE to generate (chockingly bad) \"selfies\" of myself",
+        "links": [
+            {
+                "text": "Try",
+                "url": "https://demborg.se/narcissus"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/narcissus"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/narcissus.gif"
+            ]
+        }
+    },
+    {
+        "title": "Dead bug color organ",
+        "intro": "A dead bug style analog color organ built to combat the boredom of quarantine",
+        "links": [
+            {
+                "text": "Inspiration",
+                "url": "https://www.instructables.com/id/LED-Color-Organ-Triple-Deluxe/"
+            },
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/B-pTLsSF2cb/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/color_organ.jpg"
+            ]
+        }
+    },
+    {
+        "title": "Folding desk",
+        "intro": "A home built folding desk/tv shelf for these trying times and more",
+        "links": [
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/B-c9dOrlxzt/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/folding_desk.gif"
+            ]
+        }
+    },
+    {
+        "title": "Playlist from chat history",
+        "intro": "A very quick and dirty hack to make a Spotify playlist from all the songs mentioned in a facebook chat",
+        "links": [
+            {
+                "text": "Playlist",
+                "url": "https://open.spotify.com/user/dr.lexa/playlist/7DdH0Ogd8plJ0UEUc3KsfL?si=ZAdXPMTERBaNSlGELHG4TA"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/messenger-parsing"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/playlist.png"
+            ]
+        }
+    },
+    {
+        "title": "This very website",
+        "intro": "Continuing to learn frontend by building myself a little portfolio page",
+        "links": [
+            {
+                "text": "Try",
+                "url": "https://demborg.se/"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/demborg.github.io"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/this_very_website.png"
+            ]
+        }
+    },
+    {
+        "title": "Sju \u00e5rs lycka",
+        "intro": "Performing (very mild) civil disobedience by decorating a subway station with mirrors",
+        "links": [
+            {
+                "text": "Instagram",
+                "url": "https://www.instagram.com/p/B3hWzMuFEOh/"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/sju_ars_lycka3.jpg",
+                "/img/sju_ars_lycka1.jpg",
+                "/img/sju_ars_lycka2.jpg",
+                "/img/sju_ars_lycka4.jpg"
+            ]
+        }
+    },
+    {
+        "title": "CPPN",
+        "intro": "Generative art implemented in tensorflowJS",
+        "links": [
+            {
+                "text": "Try",
+                "url": "https://demborg.se/cppn/"
+            },
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/cppn"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/cppn.png"
+            ]
+        }
+    },
+    {
+        "title": "Worst raytracer",
+        "intro": "Building the worlds worst raytracer from scratch in Python",
+        "links": [
+            {
+                "text": "Source",
+                "url": "https://github.com/Demborg/raytrace"
+            }
+        ],
+        "content": {
+            "kind": "images",
+            "images": [
+                "/img/raytrace.png"
+            ]
+        }
+    }
+]
