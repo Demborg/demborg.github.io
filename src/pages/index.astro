@@ -1,5 +1,6 @@
 ---
-
+import ProjectCard from '../components/ProjectCard.astro'
+import posts from '../data/posts.json'
 ---
 
 <html lang="en">
@@ -10,7 +11,16 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Demborg.se</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+ <body>
+    <h1>My Work</h1>
+    <div class="project-grid">
+      {posts.map(post => (
+        <ProjectCard 
+		  id={post.title}
+          title={post.title} 
+          intro={post.intro} 
+        />
+      ))}
+    </div>
+  </body>
 </html>

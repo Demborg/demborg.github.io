@@ -1,0 +1,29 @@
+---
+import posts from '../../data/posts.json';
+export async function getStaticPaths() {
+
+  return posts.map(post => {
+    return {
+      params: { id: post.title }, // This sets the URL, e.g., /projects/golden-fit
+      props: { post: post }     // This passes the post's data to the page
+    };
+  });
+}
+
+// 3. Get the data for this specific page
+const { post } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <title>{post.title}</title>
+  </head>
+  <body>
+    <a href="/">&larr; Back to all projects</a>
+    <h1>{post.title}</h1>
+    <p>{post.description}</p>
+    
+    {post.images.map(image => (
+      <img src={image} alt={`Image for ${post.title}`} />
+    ))}
+  </body>
+</html>
