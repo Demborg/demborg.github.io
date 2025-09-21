@@ -1,4 +1,5 @@
 ---
+import BaseLayout from '../../components/BaseLayout.astro';
 import posts from '../../data/posts.json';
 export async function getStaticPaths() {
 
@@ -10,14 +11,9 @@ export async function getStaticPaths() {
   });
 }
 
-// 3. Get the data for this specific page
 const { post } = Astro.props;
 ---
-<html lang="en">
-  <head>
-    <title>{post.title}</title>
-  </head>
-  <body>
+<BaseLayout>
     <a href="/">&larr; Back to all projects</a>
     <h1>{post.title}</h1>
     <p>{post.description}</p>
@@ -25,5 +21,4 @@ const { post } = Astro.props;
     {post.images.map(image => (
       <img src={image} alt={`Image for ${post.title}`} />
     ))}
-  </body>
-</html>
+</BaseLayout>

@@ -1,17 +1,9 @@
 ---
+import BaseLayout from '../components/BaseLayout.astro'
 import ProjectCard from '../components/ProjectCard.astro'
 import posts from '../data/posts.json'
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/ico" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Demborg.se</title>
-	</head>
- <body>
+<BaseLayout>
     <h1>My Work</h1>
     <div class="project-grid">
       {posts.map(post => (
@@ -22,5 +14,4 @@ import posts from '../data/posts.json'
         />
       ))}
     </div>
-  </body>
-</html>
+</BaseLayout>

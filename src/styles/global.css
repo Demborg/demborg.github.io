@@ -1,0 +1,50 @@
+
+/* Define your design tokens (colors and fonts) as CSS variables */
+:root {
+  /* COLORS */
+  --color-background: #1a1a1d;
+  --color-text: #F5F5F5;
+  --color-accent: #FFC400;
+  --color-surface-light: #2a2a2e; /* For cards or raised elements */
+
+  /* TYPOGRAPHY */
+  --font-family-heading: var(--font-great-vibes);
+  --font-family-body: var(--font-roboto-slab);
+}
+
+/* Apply base styles to the whole document */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-body);
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Style your headings */
+h1, h2, h3 {
+  font-family: var(--font-family-heading);
+  color: var(--color-accent); /* Make headings pop with the accent color */
+  font-weight: normal; /* Cursive fonts usually don't need to be bolded */
+}
+
+/* Style your links to use the accent color */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  filter: brightness(1.2); /* Make the yellow brighter on hover */
+}
+
+/* A helper class for your main page title */
+.site-title {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
