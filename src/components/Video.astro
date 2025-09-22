@@ -1,0 +1,16 @@
+---
+export interface Props {
+    video: string
+}
+
+const {video} = Astro.props
+---
+
+<video src={video} controls autoplay loop muted playsinline />
+
+<style>
+    video {
+        height: 100%;
+        width: 100%;
+    }
+</style>

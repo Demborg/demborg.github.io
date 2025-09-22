@@ -37,6 +37,10 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
+p {
+    color: var(--color-text)
+}
+
 a:hover {
   text-decoration: underline;
   filter: brightness(1.2); /* Make the yellow brighter on hover */

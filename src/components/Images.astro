@@ -1,0 +1,17 @@
+---
+export interface Props {
+    images: string[]
+    kind: "images"
+}
+
+const {images} = Astro.props;
+---
+
+<img src={images[0]}/>
+
+<style>
+    img {
+        height: 100%;
+        width: 100%;
+    }
+</style>

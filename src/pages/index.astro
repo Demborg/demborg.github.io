@@ -1,16 +1,17 @@
 ---
 import BaseLayout from '../components/BaseLayout.astro'
 import ProjectCard from '../components/ProjectCard.astro'
-import posts from '../data/posts.json'
+import posts from '../data/new_posts.json'
 ---
 <BaseLayout>
-    <h1>My Work</h1>
+    <h1>Demborg.se</h1>
     <div class="project-grid">
       {posts.map(post => (
         <ProjectCard 
-		  id={post.title}
           title={post.title} 
           intro={post.intro} 
+		  links={post.links}
+		  content={post.content}
         />
       ))}
     </div>

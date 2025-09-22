@@ -1,0 +1,19 @@
+---
+export interface Props {
+    url: string
+}
+
+const {url} = Astro.props
+---
+
+<iframe src={url} scrolling="no" allow="microphone"/>
+
+<style>
+    iframe {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 1;
+        border: 0px;
+        background-color: white;
+    }
+</style>

@@ -1,77 +1,40 @@
 ---
-interface Props {
-  id: string;
-  title: string;
-  intro: string;
+import Link from './Link.astro'
+import Images from './Images.astro'
+import Video from './Video.astro'
+import IFrame from './IFrame.astro'
+import {type Props as LinkProps} from './Link.astro'
+import {type Props as ImageProps} from './Images.astro'
+import {type Props as VideoProps} from './Video.astro'
+import {type Props as IFrameProps} from './IFrame.astro'
+
+interface Post {
+    title: string
+    intro: string
+    links: LinkProps[]
+    content: ImageProps | VideoProps | IFrameProps
 }
 
-const { id, title, intro } = Astro.props;
+const { content, title, intro, links } = Astro.props;
+
 ---
 
-<a href={`/projects/${id}`} class="card">
-  <div class="content">
+<div class="card">
+    <div class="content">
+        {content.kind === "images" && <Images {...content}/>}
+        {content.kind === "video" && <Video {...content}/>}
+        {content.kind === "iframe" && <IFrame {...content}/>}
+    </div>
+<a href={`/projects/${title}`} class="card">
     <h3 class="title">{title}</h3>
-    <p class="intro">{intro}</p>
-    <span class="call-to-action">
-      View Project &rarr;
-    </span>
-  </div>
 </a>
+<p class="intro">{intro}</p>
+{links.map(link => <Link {...link}/>)}
+</div>
+
 
 <style>
-  .card {
-    display: block;
-    background-color: var(--color-surface-light);
-    border-radius: 8px;
-    overflow: hidden; /* This keeps the image corners rounded */
-    text-decoration: none;
-    color: var(--color-text);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  }
-
-  .thumbnail {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9; /* Ensures all cards have a consistent image size */
-    object-fit: cover; /* Prevents images from being stretched */
-    border-bottom: 2px solid var(--color-accent);
-  }
-
-  .content {
-    padding: var(--space-m, 1.5rem); /* Uses 'space-m' from global.css, with a fallback */
-  }
-
-  .title {
-    /* We override the global h3 style here for better card readability */
-    /* Instead of the whimsical font, we use the body font but bolder and bigger. */
-    font-family: var(--font-family-body);
-    font-weight: 700; /* Assumes you imported a bold weight for Roboto Slab */
-    font-size: 1.5rem;
-    color: var(--color-text); /* Use the main text color, not the accent */
-    margin-block-start: 0;
-    margin-block-end: var(--space-s, 0.75rem);
-  }
-
-  .intro {
-    margin-block-start: 0;
-    margin-block-end: var(--space-m, 1.5rem);
-    opacity: 0.85; /* Slightly fade out the intro text for hierarchy */
-  }
-
-  .call-to-action {
-    display: inline-block;
-    font-weight: 700;
-    color: var(--color-accent);
-    transition: transform 0.2s ease;
-  }
-  
-  .card:hover .call-to-action {
-    transform: translateX(4px);
-  }
+    .content {
+        width: 100%;
+    }
 </style>
