@@ -1,40 +1,53 @@
 ---
-import Link from './Link.astro'
-import Images from './Images.astro'
-import Video from './Video.astro'
-import IFrame from './IFrame.astro'
-import {type Props as LinkProps} from './Link.astro'
-import {type Props as ImageProps} from './Images.astro'
-import {type Props as VideoProps} from './Video.astro'
-import {type Props as IFrameProps} from './IFrame.astro'
+import Link from "./Link.astro";
+import Images from "./Images.astro";
+import Video from "./Video.astro";
+import IFrame from "./IFrame.astro";
+import { type Props as LinkProps } from "./Link.astro";
+import { type Props as ImageProps } from "./Images.astro";
+import { type Props as VideoProps } from "./Video.astro";
+import { type Props as IFrameProps } from "./IFrame.astro";
 
 interface Post {
-    title: string
-    intro: string
-    links: LinkProps[]
-    content: ImageProps | VideoProps | IFrameProps
+    title: string;
+    intro: string;
+    links: LinkProps[];
+    content: ImageProps | VideoProps | IFrameProps;
 }
 
 const { content, title, intro, links } = Astro.props;
-
 ---
 
 <div class="card">
     <div class="content">
-        {content.kind === "images" && <Images {...content}/>}
-        {content.kind === "video" && <Video {...content}/>}
-        {content.kind === "iframe" && <IFrame {...content}/>}
+        {content.kind === "images" && <Images {...content} />}
+        {content.kind === "video" && <Video {...content} />}
+        {content.kind === "iframe" && <IFrame {...content} />}
     </div>
-<a href={`/projects/${title}`} class="card">
-    <h3 class="title">{title}</h3>
-</a>
-<p class="intro">{intro}</p>
-{links.map(link => <Link {...link}/>)}
+    <div class="body">
+        <a href={`/projects/${title}`} class="card">
+            <h3 class="title">{title}</h3>
+        </a>
+        <p class="intro">{intro}</p>
+        {links.map((link) => <Link {...link} />)}
+    </div>
 </div>
 
-
 <style>
+    .card {
+        background-color: var(--color-surface-light);
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
     .content {
         width: 100%;
+        aspect-ratio: 1;
+        overflow: hidden;
+    }
+    .body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
     }
 </style>
