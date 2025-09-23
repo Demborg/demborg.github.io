@@ -1,12 +1,27 @@
 ---
 import BaseLayout from '../../components/BaseLayout.astro';
-import posts from '../../data/posts.json';
-export async function getStaticPaths() {
+import ProjectCard from '../../components/ProjectCard.astro';
+import posts_data from '../../data/posts.json';
 
+const posts = posts_data.map(post => {
+    const {images, video, iframe, ...rest} = post;
+    if (images && images.length) {
+        return {...rest, content: {kind: "images", images}};
+    }
+    if (video) {
+        return {...rest, content: {kind: "video", video}};
+    }
+    if (iframe) {
+        return {...rest, content: {kind: "iframe", url: iframe}};
+    }
+    return {...rest, content: {kind: "images", images: []}};
+});
+
+export async function getStaticPaths() {
   return posts.map(post => {
     return {
-      params: { id: post.title }, // This sets the URL, e.g., /projects/golden-fit
-      props: { post: post }     // This passes the post's data to the page
+      params: { id: post.title },
+      props: { post: post }
     };
   });
 }
@@ -15,10 +30,7 @@ const { post } = Astro.props;
 ---
 <BaseLayout>
     <a href="/">&larr; Back to all projects</a>
-    <h1>{post.title}</h1>
-    <p>{post.description}</p>
-    
-    {post.images.map(image => (
-      <img src={image} alt={`Image for ${post.title}`} />
-    ))}
+    <ProjectCard
+        content={post.content}          intro={post.intro}          links={post.links}         title={post.title}
+    />
 </BaseLayout>

@@ -1,12 +1,13 @@
 ---
 export interface Props {
-    url: string
+    url: string;
+    kind: "iframe";
 }
 
-const {url} = Astro.props
+const {url} = Astro.props;
 ---
 
-<iframe src={url} scrolling="no" allow="microphone"/>
+<iframe allow="microphone" src={url}/>
 
 <style>
     iframe {

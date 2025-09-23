@@ -1,12 +1,13 @@
 ---
 export interface Props {
-    video: string
+    video: string;
+    kind: "video";
 }
 
-const {video} = Astro.props
+const {video} = Astro.props;
 ---
 
-<video src={video} autoplay loop muted playsinline />
+<video autoplay loop muted playsinline src={video} />
 
 <style>
     video {
