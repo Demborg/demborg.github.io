@@ -4,16 +4,6 @@ import Images from "./Images.astro";
 import Video from "./Video.astro";
 import IFrame from "./IFrame.astro";
 import { type Props as LinkProps } from "./Link.astro";
-import { type Props as ImageProps } from "./Images.astro";
-import { type Props as VideoProps } from "./Video.astro";
-import { type Props as IFrameProps } from "./IFrame.astro";
-
-interface Post {
-    title: string;
-    intro: string;
-    links: LinkProps[];
-    content: ImageProps | VideoProps | IFrameProps;
-}
 
 const { content, title, intro, links } = Astro.props;
 ---
@@ -25,11 +15,11 @@ const { content, title, intro, links } = Astro.props;
         {content.kind === "iframe" && <IFrame {...content} />}
     </div>
     <div class="body">
-        <a href={`/projects/${title}`} class="card">
+        <a class="card" href={`/projects/${title}`}>
             <h3 class="title">{title}</h3>
         </a>
         <p class="intro">{intro}</p>
-        {links.map((link) => <Link {...link} />)}
+        {links.map((link: LinkProps) => <Link {...link} />)}
     </div>
 </div>
 
