@@ -16,3 +16,13 @@ import posts from '../data/new_posts.json'
       ))}
     </div>
 </BaseLayout>
+
+<style>
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem; /* You can adjust this value */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+</style>

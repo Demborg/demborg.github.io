@@ -18,7 +18,6 @@ body {
   color: var(--color-text);
   font-family: var(--font-family-body);
   margin: 0;
-  padding: 2rem;
   font-size: 1.1rem;
   line-height: 1.6;
 }
