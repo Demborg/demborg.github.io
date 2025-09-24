@@ -29,20 +29,12 @@ h1, h2, h3 {
   font-weight: normal; /* Cursive fonts usually don't need to be bolded */
 }
 
-/* Style your links to use the accent color */
 a {
-  color: var(--color-accent);
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
 }
 
 p {
     color: var(--color-text)
-}
-
-a:hover {
-  text-decoration: underline;
-  filter: brightness(1.2); /* Make the yellow brighter on hover */
 }
 
 /* A helper class for your main page title */

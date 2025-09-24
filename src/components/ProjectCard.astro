@@ -29,7 +29,9 @@ const { content, title, intro, links } = Astro.props;
             <h3 class="title">{title}</h3>
         </a>
         <p class="intro">{intro}</p>
-        {links.map((link) => <Link {...link} />)}
+        <div class="link-bar">
+            {links.map((link) => <Link {...link} />)}
+        </div>
     </div>
 </div>
 
@@ -38,6 +40,8 @@ const { content, title, intro, links } = Astro.props;
         background-color: var(--color-surface-light);
         border-radius: 1rem;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
     .content {
@@ -46,8 +50,16 @@ const { content, title, intro, links } = Astro.props;
         overflow: hidden;
     }
     .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 1rem;
+        flex-grow: 1;
+    }
+    .link-bar {
+        display: flex;
+        justify-content: space-between;
     }
 </style>

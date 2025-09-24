@@ -10,3 +10,15 @@ const {url, text} = Astro.props
 <div>
     <a href={url}>{text}</a>
 </div>
+
+<style>
+    a {
+        border: 2px solid;
+        padding: 0.5rem;
+        border-radius: 1.5rem;
+        color: var(--color-text);
+    }
+    a:hover {
+        color: var(--color-accent)
+    }
+</style>
