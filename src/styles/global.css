@@ -2,10 +2,11 @@
 /* Define your design tokens (colors and fonts) as CSS variables */
 :root {
   /* COLORS */
-  --color-background: #1a1a1d;
+  --color-bg-dark: oklch(20% 0 0);
+  --color-bg: oklch(30% 0 0);
+  --color-bg-light: oklch(40% 0 0);
   --color-text: #F5F5F5;
   --color-accent: #FFC400;
-  --color-surface-light: #2a2a2e; /* For cards or raised elements */
 
   /* TYPOGRAPHY */
   --font-family-heading: var(--font-great-vibes);
@@ -14,12 +15,10 @@
 
 /* Apply base styles to the whole document */
 body {
-  background-color: var(--color-background);
+  background-color: var(--color-bg-dark);
   color: var(--color-text);
   font-family: var(--font-family-body);
   margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 
 /* Style your headings */

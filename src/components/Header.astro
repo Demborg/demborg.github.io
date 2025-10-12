@@ -1,0 +1,40 @@
+---
+import {Image} from 'astro:assets'
+import linkedin from './icons/linkedin.png'
+import github from './icons/github.png'
+import insta from './icons/insta.png'
+---
+<div class="header">
+    <a href='/'><h1>Demborg.se</h1></a>
+    <span>
+        <a href="https://www.linkedin.com/in/axel-demborg-9810a0b5/"><Image src={linkedin} alt="linked in" class="icon"/></a>
+        <a href="https://www.github.com/demborg"><Image src={github} alt="github" /></a>
+        <a href="https://www.instagram.com/axeldemborg/"><Image src={insta} alt="instagram" /></a>
+    </span>
+</div>
+
+<style>
+    .header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: var(--color-bg);
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+    }
+    span {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    img {
+        height: 100%;
+        width: auto;
+        opacity: 70%;
+    }
+    img:hover {
+        opacity: 100%;
+    }
+</style>

@@ -4,7 +4,6 @@ import ProjectCard from '../components/ProjectCard.astro'
 import posts from '../data/new_posts.json'
 ---
 <BaseLayout>
-    <h1>Demborg.se</h1>
     <div class="project-grid">
       {posts.map(post => (
         <ProjectCard 
@@ -20,9 +19,9 @@ import posts from '../data/new_posts.json'
 <style>
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 1.5rem; /* You can adjust this value */
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    gap: 1.5rem;
+    padding: 1.5rem;
   }
 </style>
