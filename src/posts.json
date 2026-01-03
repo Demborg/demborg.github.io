@@ -1,10 +1,17 @@
 [
   {
+    "title": "Softbody",
+    "images": [],
+    "iframe": "https://demborg.se/genuary26/2.html",
+    "intro": "Day two of Genuary 2026 and I tried to simulate at least parts of the 12 principles of animation using softbody simulation",
+    "links": [{"url": "https://demborg.se/genuary26/2.html", "text": "Try it!"}]
+  },
+  {
     "title": "Faces of a square",
     "images": [],
     "iframe": "https://demborg.se/genuary26/1.html",
     "intro": "For the first day of genuary 2026 the prompt was to build something with one color, one shape",
-    "links": []
+    "links": [{"url": "https://demborg.se/genuary26/1.html", "text": "Try it!"}]
   },
   {
     "title": "Golden fit",
