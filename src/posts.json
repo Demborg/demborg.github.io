@@ -1,5 +1,12 @@
 [
   {
+    "title": "fibonacci forever",
+    "images": [],
+    "video": "/video/fib.mp4",
+    "intro": "Third day of genuary is the charm, redering a looping fibonacci spiral in blender.",
+    "links": [{"url": "https://www.instagram.com/p/DTGopcFDbkd/", "text": "Instagram"}] 
+  },
+  {
     "title": "Softbody",
     "images": [],
     "iframe": "https://demborg.se/genuary26/2.html",
