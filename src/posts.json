@@ -1,5 +1,12 @@
 [
   {
+    "title": "Genuary",
+    "images": [],
+    "iframe": "https://demborg.se/genuary26/5.html",
+    "intro": "Render the word \"Genuary\" without using a font.",
+    "links": [{"url": "https://demborg.se/genuary26/5.html", "text": "Try it!"}]
+  },
+  {
     "title": "fibonacci forever",
     "images": [],
     "video": "/video/fib.mp4",
