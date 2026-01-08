@@ -266,7 +266,8 @@
   },
   {
     "title": "Cheap copies",
-    "images": ["/img/dot.gif"],
+    "video": "/video/dot.mp4",
+    "images": [],
     "intro": "I was really intruiged by some NFT art works displayed at the photograhic museum in stockholm so I tried to recreate them in blender.",
     "links": [
       {
@@ -345,7 +346,8 @@
   },
   {
     "title": "Scope face",
-    "images": ["/img/scope.gif"],
+    "video": "/video/scope.mp4",
+    "images": [],
     "intro": "Showing a webcam feed on a oscilloscope screen by converting it to terrible sound",
     "links": [
       { "text": "Source", "url": "https://github.com/Demborg/scope-face" }
@@ -383,7 +385,7 @@
   },
   {
     "title": "Project Narcissus",
-    "images": ["/img/narcissus.gif"],
+    "images": [],
     "iframe": "https://demborg.se/narcissus/?fullscreen=true",
     "intro": "Feeding my inner narcissist by training a VAE to generate (chockingly bad) \"selfies\" of myself",
     "links": [
@@ -405,7 +407,8 @@
   },
   {
     "title": "Folding desk",
-    "images": ["/img/folding_desk.gif"],
+    "video": "/video/folding_desk.mp4",
+    "images": [],
     "intro": "A home built folding desk/tv shelf for these trying times and more",
     "links": [
       { "text": "Instagram", "url": "https://www.instagram.com/p/B-c9dOrlxzt/" }
