@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { getCollection } from "astro:content";
+
+const allProjects = await getCollection("projects");
+---
+
+<Layout title="Demborg.se">
+	<nav>
+		<header style="margin-bottom: var(--pico-block-spacing-vertical)">
+			<h1>Axel Demborg</h1>
+		</header>
+	</nav>
+
+	<div class="grid-layout">
+		{allProjects.map((p) => <ProjectCard project={p} />)}
+	</div>
+</Layout>
+
+<style>
+	.grid-layout {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		gap: var(--pico-spacing);
+	}
+</style>

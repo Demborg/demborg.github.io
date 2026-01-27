@@ -1,0 +1,9 @@
+---
+interface Props {
+    images: string[];
+}
+
+const { images } = Astro.props;
+---
+
+<img src={images[0]} />

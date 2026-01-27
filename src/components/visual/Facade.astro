@@ -1,0 +1,17 @@
+---
+interface Props {
+    src: string;
+    poster?: string;
+}
+
+const { src, poster } = Astro.props;
+---
+
+<iframe src={src} loading="lazy"></iframe>
+
+<style>
+    iframe {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+</style>
