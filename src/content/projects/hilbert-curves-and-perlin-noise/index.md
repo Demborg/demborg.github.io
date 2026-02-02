@@ -1,4 +1,5 @@
 ---
+date: 2023-02-15
 title: "Hilbert curves and perlin noise"
 intro: "Hilbert curves driven by some perlin noise in the browser"
 type: "iframe"

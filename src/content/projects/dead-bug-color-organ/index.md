@@ -1,4 +1,5 @@
 ---
+date: 2020-04-15
 title: "Dead bug color organ"
 intro: "A dead bug style analog color organ built to combat the boredom of quarantine"
 type: "images"

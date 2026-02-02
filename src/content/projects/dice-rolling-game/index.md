@@ -1,4 +1,5 @@
 ---
+date: 2022-07-17
 title: "Dice rolling game"
 intro: "GMTK:s game jam with the theme \"roll the dice\" was just the excuse I needed to learn some game development in Godot"
 type: "images"

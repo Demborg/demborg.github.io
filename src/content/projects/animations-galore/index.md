@@ -1,4 +1,5 @@
 ---
+date: 2022-11-27
 title: "Animations galore!"
 intro: "Messing around with CSS animations and mouse pointer tracking to do some silly animations right here on this website."
 type: "video"

@@ -1,4 +1,5 @@
 ---
+date: 2023-03-23
 title: "Teewee: the art exhibition"
 intro: "This past week I have been doing one of my scariest projects as of yet; hosting an art exhibition at Konsthall C in lovely Hökarängen."
 type: "images"

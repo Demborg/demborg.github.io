@@ -1,4 +1,5 @@
 ---
+date: 2020-11-27
 title: "Swapping images"
 intro: "Making it possible to swap between multiple images on this site"
 type: "images"

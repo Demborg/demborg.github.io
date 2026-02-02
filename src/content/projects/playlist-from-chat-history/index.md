@@ -1,4 +1,5 @@
 ---
+date: 2020-02-01
 title: "Playlist from chat history"
 intro: "A very quick and dirty hack to make a Spotify playlist from all the songs mentioned in a facebook chat"
 type: "images"

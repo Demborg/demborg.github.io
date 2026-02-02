@@ -1,4 +1,5 @@
 ---
+date: 2020-12-04
 title: "Python poetry"
 intro: "I was embarrassingly proud of some of my solutions to this years advent of code puzzles. Pretentiously I call them \"python poetry\""
 type: "images"

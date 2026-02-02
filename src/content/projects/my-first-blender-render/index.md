@@ -1,4 +1,5 @@
 ---
+date: 2021-05-01
 title: "My first blender render!"
 intro: "I just completed my first blender tutorial and was really excited with the resulting bowl of apples. Despite or maybe, because of, its many flaws."
 type: "images"

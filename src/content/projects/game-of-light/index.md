@@ -1,4 +1,5 @@
 ---
+date: 2023-06-23
 title: "Game of light"
 intro: "Learning about the new simulations nodes in Blender 3.6 by messing around with a hexagonal game of life."
 type: "video"

@@ -1,4 +1,5 @@
 ---
+date: 2022-12-01
 title: "Advent of procastination 2022"
 intro: "Yet an other year I manage to distract myself from actually completing the puzzles. This time by trying (and arguably failing) to make the solutions into a \"beutiful\" website."
 type: "iframe"

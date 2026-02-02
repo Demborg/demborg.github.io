@@ -1,4 +1,5 @@
 ---
+date: 2022-01-01
 title: "Geometry nodes galore"
 intro: "I have been making some animations in Blender using the new geometry nodes in 3.0. These have been inspired by the first few prompts from Genuary 2022."
 type: "images"

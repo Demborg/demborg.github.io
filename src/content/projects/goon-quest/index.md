@@ -1,4 +1,5 @@
 ---
+date: 2023-07-09
 title: "Goon Quest"
 intro: "Another GMTK game jam another shitty game. This time sound effects was one of the things I got the most distracted by, so please play with sound on."
 type: "images"

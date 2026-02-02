@@ -1,4 +1,5 @@
 ---
+date: 2023-02-01
 title: "Brownian motion for plotter"
 intro: "Experimenting with brownian motion based programs for my plotter to make it independent for my comming exhibtion at konsthall C:s centrifug"
 type: "iframe"

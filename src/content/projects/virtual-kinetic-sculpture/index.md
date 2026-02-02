@@ -1,4 +1,5 @@
 ---
+date: 2023-11-01
 title: "Virtual kinetic sculpture"
 intro: "A colegue of mine wanted to rebuild a fantastic kinetic sculpture as a hackathon project. I helped him out with visualizing it using blender geometry nodes."
 type: "video"

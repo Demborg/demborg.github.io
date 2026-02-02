@@ -1,4 +1,5 @@
 ---
+date: 2025-01-01
 title: "Genuary 2025"
 intro: "Yet again starting off the year with some generative art. This time we got some webcam effects, some onions and 42 lines of a iterated funciton system"
 type: "images"

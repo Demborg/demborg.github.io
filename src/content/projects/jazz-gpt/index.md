@@ -1,4 +1,5 @@
 ---
+date: 2023-05-07
 title: "Jazz-GPT"
 intro: "Trying desperatley to stay with the times I colaborated with chat-gpt to create a website for generative \"jazz\"."
 type: "iframe"

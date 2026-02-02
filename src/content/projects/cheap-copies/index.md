@@ -1,4 +1,5 @@
 ---
+date: 2022-08-12
 title: "Cheap copies"
 intro: "I was really intruiged by some NFT art works displayed at the photograhic museum in stockholm so I tried to recreate them in blender."
 type: "video"

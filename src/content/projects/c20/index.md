@@ -1,4 +1,5 @@
 ---
+date: 2024-01-03
 title: "C20"
 intro: "The third day of Genuary 2024 became and homage to the train that has taken me basically everywhere I have wanted to go. SL:s lovely C20, may you roll on forever."
 type: "iframe"

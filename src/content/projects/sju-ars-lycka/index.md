@@ -1,4 +1,5 @@
 ---
+date: 2019-10-10
 title: "Sju års lycka"
 intro: "Performing (very mild) civil disobedience by decorating a subway station with mirrors"
 type: "images"

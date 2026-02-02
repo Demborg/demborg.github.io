@@ -1,4 +1,5 @@
 ---
+date: 2023-07-15
 title: "Habit tracker"
 intro: "Got a bit curious to learn rust after i realized I could do full stack applications fully in it. My first experiment is building a habit tracker."
 type: "images"

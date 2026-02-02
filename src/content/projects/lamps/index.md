@@ -1,4 +1,5 @@
 ---
+date: 2020-08-15
 title: "Lamps"
 intro: "Making me some lamps to bring more light into my new apartment"
 type: "images"

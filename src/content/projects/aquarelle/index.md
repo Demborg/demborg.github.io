@@ -1,4 +1,5 @@
 ---
+date: 2024-05-01
 title: "Aquarelle"
 intro: "Got inspired by the wonderous flows of water colors and tried my hand at faking the effect in software. This takes a lot of inspiration from tylerxhobbs nicely written blog on the subject."
 type: "iframe"

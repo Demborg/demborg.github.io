@@ -1,4 +1,5 @@
 ---
+date: 2024-06-23
 title: "Kintsugi"
 intro: "Mending a broken teapot and in turn my own broken heart over the fragility of my precious brewer."
 type: "images"

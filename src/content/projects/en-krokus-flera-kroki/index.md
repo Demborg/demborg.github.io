@@ -1,4 +1,5 @@
 ---
+date: 2022-04-20
 title: "En krokus, flera kroki"
 intro: "Using my growing proficiency in blender to illustrate a weird pun in swedish"
 type: "images"
