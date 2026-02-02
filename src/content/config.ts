@@ -16,10 +16,9 @@ const videoProject = ({ image }: { image: any }) => baseSchema.extend({
     poster: image().optional()
 });
 
-const iframeProject = ({ image }: { image: any }) => baseSchema.extend({
+const iframeProject = () => baseSchema.extend({
     type: z.literal('iframe'),
     iframe: z.string().url(),
-    poster: image().optional()
 });
 
 const galleryProject = ({ image }: { image: any }) => baseSchema.extend({
@@ -30,7 +29,7 @@ const galleryProject = ({ image }: { image: any }) => baseSchema.extend({
 const projects = defineCollection({
     schema: (tools) => z.discriminatedUnion('type', [
         videoProject(tools),
-        iframeProject(tools),
+        iframeProject(),
         galleryProject(tools)
     ]),
 });

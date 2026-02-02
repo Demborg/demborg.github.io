@@ -1,13 +1,12 @@
 ---
 interface Props {
     src: string;
-    poster?: string;
 }
 
-const { src, poster } = Astro.props;
+const { src } = Astro.props;
 ---
 
-<iframe src={src} loading="lazy" allow="microphone" scrolling="no"></iframe>
+<iframe src={src} loading="lazy" allow="microphone"></iframe>
 
 <style>
     iframe {

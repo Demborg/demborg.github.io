@@ -24,14 +24,7 @@ const { title, intro, links } = project.data;
                 <Images images={project.data.images} />
             )
         }
-        {
-            project.data.type === "iframe" && (
-                <Iframe
-                    src={project.data.iframe}
-                    poster={project.data.poster}
-                />
-            )
-        }
+        {project.data.type === "iframe" && <Iframe src={project.data.iframe} />}
     </div>
 
     <div class="overlay">
