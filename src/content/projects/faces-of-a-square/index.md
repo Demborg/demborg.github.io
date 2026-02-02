@@ -1,4 +1,5 @@
 ---
+date: 2026-01-01
 title: "Faces of a square"
 intro: "For the first day of genuary 2026 the prompt was to build something with one color, one shape"
 type: "iframe"

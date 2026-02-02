@@ -1,4 +1,5 @@
 ---
+date: 2026-01-05
 title: "Genuary"
 intro: "Render the word \"Genuary\" without using a font."
 type: "iframe"
