@@ -3,6 +3,7 @@ name: Astro Check
 on:
   pull_request:
     branches: [ source ]
+  workflow_dispatch:
 
 jobs:
   check:
@@ -18,7 +19,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Astro Check
         run: npm run astro check
