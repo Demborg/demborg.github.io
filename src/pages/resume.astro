@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getEntry } from "astro:content";
+
+const resumeEntry = await getEntry("resume", "resume");
+if (!resumeEntry) {
+    throw new Error("Resume entry not found");
+}
+const { Content } = await resumeEntry.render();
+---
+
+<Layout title={resumeEntry.data.title}>
+    <article>
+        <Content />
+    </article>
+</Layout>
+
+<style>
+    /* Add any custom styles for the resume here if needed */
+    article {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+</style>

@@ -34,4 +34,11 @@ const projects = defineCollection({
     ]),
 });
 
-export const collections = { projects };
+const resume = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        description: z.string(),
+    }),
+});
+
+export const collections = { projects, resume };
