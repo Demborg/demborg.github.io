@@ -9,12 +9,6 @@ const allProjects = (await getCollection("projects")).sort(
 ---
 
 <Layout title="Demborg.se">
-	<nav>
-		<header style="margin-bottom: var(--pico-block-spacing-vertical)">
-			<h1>Axel Demborg</h1>
-		</header>
-	</nav>
-
 	<div class="grid-layout">
 		{allProjects.map((p) => <ProjectCard project={p} />)}
 	</div>
