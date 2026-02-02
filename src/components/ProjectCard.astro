@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Facade from "./visual/Facade.astro";
+import Iframe from "./visual/Iframe.astro";
 import Images from "./visual/Images.astro";
 import Video from "./visual/Video.astro";
 
@@ -26,7 +26,7 @@ const { title, intro, links } = project.data;
         }
         {
             project.data.type === "iframe" && (
-                <Facade
+                <Iframe
                     src={project.data.iframe}
                     poster={project.data.poster}
                 />
