@@ -3,7 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import { getCollection } from "astro:content";
 
-const allProjects = await getCollection("projects");
+const allProjects = (await getCollection("projects")).sort(
+	(a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
 ---
 
 <Layout title="Demborg.se">
