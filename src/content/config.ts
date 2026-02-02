@@ -9,28 +9,28 @@ const baseSchema = z.object({
     })).optional(),
 });
 
-const videoProject = baseSchema.extend({
+const videoProject = ({ image }: { image: any }) => baseSchema.extend({
     type: z.literal('video'),
     video: z.string(),
-    poster: z.string().optional()
+    poster: image().optional()
 });
 
-const iframeProject = baseSchema.extend({
+const iframeProject = ({ image }: { image: any }) => baseSchema.extend({
     type: z.literal('iframe'),
     iframe: z.string().url(),
-    poster: z.string().optional()
+    poster: image().optional()
 });
 
-const galleryProject = baseSchema.extend({
+const galleryProject = ({ image }: { image: any }) => baseSchema.extend({
     type: z.literal('images'),
-    images: z.array(z.string()).min(1)
+    images: z.array(image()).min(1)
 });
 
 const projects = defineCollection({
-    schema: z.discriminatedUnion('type', [
-        videoProject,
-        iframeProject,
-        galleryProject
+    schema: (tools) => z.discriminatedUnion('type', [
+        videoProject(tools),
+        iframeProject(tools),
+        galleryProject(tools)
     ]),
 });
 

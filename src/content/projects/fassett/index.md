@@ -1,0 +1,7 @@
+---
+title: "Fassett"
+intro: "For the second day of Genuary 2024 I got inspired by a lovely pattern sample from Kaffe Fassett and tried to make procedural tiling patterns and paletts."
+type: "iframe"
+links: [{"label":"Inspiration","url":"https://www.kaffefassett.com/"},{"label":"Fulscreen","url":"https://demborg.se/fassett"}]
+iframe: "https://demborg.se/fassett/embed"
+---

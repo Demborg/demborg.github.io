@@ -1,10 +1,18 @@
 ---
 interface Props {
     src: string;
-    poster?: string;
+    poster?: any;
 }
 
 const { src, poster } = Astro.props;
+const posterSrc = poster?.src || poster;
 ---
 
-<video src={src} poster={poster} autoplay playsinline loop></video>
+<video src={src} poster={posterSrc} autoplay playsinline loop muted></video>
+
+<style>
+    video {
+        width: 100%;
+        height: auto;
+    }
+</style>

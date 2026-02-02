@@ -7,11 +7,12 @@ interface Props {
 const { src, poster } = Astro.props;
 ---
 
-<iframe src={src} loading="lazy"></iframe>
+<iframe src={src} loading="lazy" allow="microphone" scrolling="no"></iframe>
 
 <style>
     iframe {
         width: 100%;
         aspect-ratio: 1 / 1;
+        overflow: hidden;
     }
 </style>
