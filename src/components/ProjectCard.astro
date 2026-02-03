@@ -1,0 +1,66 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Iframe from "./visual/Iframe.astro";
+import Images from "./visual/Images.astro";
+import Video from "./visual/Video.astro";
+
+interface Props {
+    project: CollectionEntry<"projects">;
+}
+
+const { project } = Astro.props;
+const { title, intro, links } = project.data;
+---
+
+<article class="group">
+    <div class="visuals">
+        {
+            project.data.type === "video" && (
+                <Video src={project.data.video} poster={project.data.poster} />
+            )
+        }
+        {
+            project.data.type === "images" && (
+                <Images images={project.data.images} />
+            )
+        }
+        {project.data.type === "iframe" && <Iframe src={project.data.iframe} />}
+    </div>
+
+    <div class="overlay">
+        <header><h3>{title}</h3></header>
+        <p>{intro}</p>
+
+        {
+            links && (
+                <nav>
+                    {links.map((l: { label: string; url: string }) => (
+                        <a
+                            href={l.url}
+                            target="_blank"
+                            role="button"
+                            class="secondary"
+                        >
+                            {l.label}
+                        </a>
+                    ))}
+                </nav>
+            )
+        }
+    </div>
+</article>
+
+<style>
+    article {
+        padding: 0;
+        overflow: hidden;
+    }
+    article .overlay {
+        padding: var(--pico-spacing);
+    }
+    article .visuals {
+        width: 100%;
+        aspect-ratio: 1;
+        overflow: hidden;
+    }
+</style>

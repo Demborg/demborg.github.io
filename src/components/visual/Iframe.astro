@@ -1,0 +1,17 @@
+---
+interface Props {
+    src: string;
+}
+
+const { src } = Astro.props;
+---
+
+<iframe src={src} loading="lazy" allow="microphone"></iframe>
+
+<style>
+    iframe {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+    }
+</style>
