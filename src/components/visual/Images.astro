@@ -7,11 +7,88 @@ interface Props {
 const { images } = Astro.props;
 ---
 
-<Image src={images[0]} alt="" />
+<div class="carousel-container" data-images-count={images.length}>
+    <div class="carousel-track">
+        {
+            images.map((img, index) => (
+                <div class="carousel-slide" data-index={index}>
+                    <Image src={img} alt="" />
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<script>
+    function initCarousels() {
+        const containers = document.querySelectorAll(".carousel-container");
+
+        containers.forEach((container) => {
+            if (container.hasAttribute("data-initialized")) return;
+            container.setAttribute("data-initialized", "true");
+
+            const count = parseInt(
+                container.getAttribute("data-images-count") || "0",
+            );
+            if (count <= 1) return;
+
+            const track = container.querySelector(
+                ".carousel-track",
+            ) as HTMLElement;
+            let currentIndex = 0;
+
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % count;
+                if (track) {
+                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
+            }, 3000);
+        });
+    }
+
+    // Run on both initial load and view transitions
+    document.addEventListener("DOMContentLoaded", initCarousels);
+    document.addEventListener("astro:page-load", initCarousels);
+
+    // Fallback for immediate execution if DOM is already ready
+    if (
+        document.readyState === "interactive" ||
+        document.readyState === "complete"
+    ) {
+        initCarousels();
+    }
+</script>
 
 <style>
+    .carousel-container {
+        width: 100%;
+        aspect-ratio: 1;
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+
+    .carousel-track {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
     img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 </style>
