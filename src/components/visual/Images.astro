@@ -30,27 +30,85 @@ const { images } = Astro.props;
             const count = parseInt(
                 container.getAttribute("data-images-count") || "0",
             );
-            if (count <= 1) return;
+
+            // Determine visible slides based on container width
+            const updateVisibleSlides = () => {
+                const width = container.clientWidth;
+                if (width >= 900) return 3;
+                if (width >= 600) return 2;
+                return 1;
+            };
+
+            let visibleSlides = updateVisibleSlides();
+
+            // Observe resize to update visible slides
+            const resizeObserver = new ResizeObserver(() => {
+                visibleSlides = updateVisibleSlides();
+                // Force an update to fix alignment if needed immediately
+                // but the interval will pick it up naturally or we can reset
+            });
+            resizeObserver.observe(container);
+
+            if (count <= 1) {
+                // Even if count <= 1, strictly we might just want to show it.
+                // But the existing logic returned here.
+                // We should ensure styles are correct for 1 item.
+                (container as HTMLElement).style.setProperty(
+                    "--carousel-slides-visible",
+                    "1",
+                );
+                return;
+            }
 
             const track = container.querySelector(
                 ".carousel-track",
             ) as HTMLElement;
             let currentIndex = 0;
+            let direction = 1; // 1 = forward, -1 = backward
 
-            setInterval(() => {
-                currentIndex = (currentIndex + 1) % count;
-                if (track) {
-                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            const updateCarousel = () => {
+                // Update CSS variable just in case (though we could do it in resize observer)
+                (container as HTMLElement).style.setProperty(
+                    "--carousel-slides-visible",
+                    visibleSlides.toString(),
+                );
+
+                // If we have enough space for all images, reset to start
+                if (count <= visibleSlides) {
+                    currentIndex = 0;
+                    if (track) track.style.transform = `translateX(0%)`;
+                    return;
                 }
-            }, 3000);
+
+                // Calculate max index - logic remains same
+                let maxIndex = count - visibleSlides;
+                if (maxIndex < 0) maxIndex = 0;
+
+                // Move
+                currentIndex += direction;
+
+                // Ping-pong logic
+                if (currentIndex >= maxIndex) {
+                    currentIndex = maxIndex;
+                    direction = -1;
+                } else if (currentIndex <= 0) {
+                    currentIndex = 0;
+                    direction = 1;
+                }
+
+                if (track) {
+                    const step = 100 / visibleSlides;
+                    track.style.transform = `translateX(-${currentIndex * step}%)`;
+                }
+            };
+
+            setInterval(updateCarousel, 3000);
         });
     }
 
-    // Run on both initial load and view transitions
     document.addEventListener("DOMContentLoaded", initCarousels);
     document.addEventListener("astro:page-load", initCarousels);
 
-    // Fallback for immediate execution if DOM is already ready
     if (
         document.readyState === "interactive" ||
         document.readyState === "complete"
@@ -62,7 +120,7 @@ const { images } = Astro.props;
 <style>
     .carousel-container {
         width: 100%;
-        aspect-ratio: 1;
+        height: 100%;
         overflow: hidden;
         position: relative;
         display: block;
@@ -76,8 +134,8 @@ const { images } = Astro.props;
     }
 
     .carousel-slide {
-        flex: 0 0 100%;
-        width: 100%;
+        flex: 0 0 calc(100% / var(--carousel-slides-visible, 1));
+        width: calc(100% / var(--carousel-slides-visible, 1));
         height: 100%;
         display: flex;
         align-items: center;

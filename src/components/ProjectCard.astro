@@ -28,7 +28,11 @@ const { title, intro, links } = project.data;
     </div>
 
     <div class="overlay">
-        <header><h3>{title}</h3></header>
+        <header>
+            <a href={`/projects/${project.slug}`}>
+                <h3>{title}</h3>
+            </a>
+        </header>
         <p>{intro}</p>
 
         {

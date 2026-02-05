@@ -1,0 +1,88 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const projects = await getCollection("projects");
+    return projects.map((project) => ({
+        params: { slug: project.slug },
+        props: { project },
+    }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const { title, intro, type, links } = project.data;
+
+import Video from "../../components/visual/Video.astro";
+import Iframe from "../../components/visual/Iframe.astro";
+import Images from "../../components/visual/Images.astro";
+---
+
+<Layout title={title}>
+    <article class="project-view">
+        <div class="hero-visual">
+            {
+                type === "video" && (
+                    <Video
+                        src={project.data.video}
+                        poster={project.data.poster}
+                    />
+                )
+            }
+            {type === "images" && <Images images={project.data.images} />}
+            {type === "iframe" && <Iframe src={project.data.iframe} />}
+        </div>
+        <header>
+            <h1>{title}</h1>
+            <p class="date">{project.data.date.toISOString().split("T")[0]}</p>
+            <p class="intro">{intro}</p>
+            {
+                links && (
+                    <nav>
+                        {links.map((l: { label: string; url: string }) => (
+                            <a
+                                href={l.url}
+                                target="_blank"
+                                role="button"
+                                class="secondary outline"
+                            >
+                                {l.label}
+                            </a>
+                        ))}
+                    </nav>
+                )
+            }
+        </header>
+
+        <section class="content">
+            <Content />
+        </section>
+    </article>
+</Layout>
+
+<style>
+    .project-view {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .intro {
+        font-style: italic;
+        color: var(--pico-muted-color);
+        margin-bottom: var(--pico-spacing);
+    }
+    .content {
+        line-height: 1.6;
+    }
+    .hero-visual {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        margin-bottom: var(--pico-spacing);
+        background-color: var(--pico-card-background-color);
+        border-radius: var(--pico-border-radius);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
