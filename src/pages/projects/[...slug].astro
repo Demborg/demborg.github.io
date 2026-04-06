@@ -17,6 +17,7 @@ const { title, intro, type, links } = project.data;
 import Video from "../../components/visual/Video.astro";
 import Iframe from "../../components/visual/Iframe.astro";
 import Images from "../../components/visual/Images.astro";
+import ProjectLinks from "../../components/ProjectLinks.astro";
 ---
 
 <Layout title={title}>
@@ -37,22 +38,7 @@ import Images from "../../components/visual/Images.astro";
             <h1>{title}</h1>
             <p class="date">{project.data.date.toISOString().split("T")[0]}</p>
             <p class="intro">{intro}</p>
-            {
-                links && (
-                    <nav>
-                        {links.map((l: { label: string; url: string }) => (
-                            <a
-                                href={l.url}
-                                target="_blank"
-                                role="button"
-                                class="primary outline"
-                            >
-                                {l.label}
-                            </a>
-                        ))}
-                    </nav>
-                )
-            }
+            <ProjectLinks links={links} />
         </header>
 
         <section class="content">
