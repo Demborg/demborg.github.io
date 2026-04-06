@@ -11,8 +11,6 @@ button.outline,
 }
 
 html:root:root:root {
-  /* Your Yellow DNA */
-  --db-hue: 100;
   --db-chroma: 0.12;
 
   /* Auto-calculate the base colors based on current theme */
@@ -34,23 +32,26 @@ html:root:root:root {
   --primary-hover: var(--pico-primary-hover);
 }
 
-/* 2. LIGHT MODE (Mustard) */
+/* 2. LIGHT MODE */
 html[data-theme="light"],
 html:root:not([data-theme="dark"]) {
   --db-lightness: 0.7;
   --db-hover-mod: -0.1;
+  --db-hue: 280;
 }
 
 /* 3. DARK MODE OS (Pale Yellow) */
 @media only screen and (prefers-color-scheme: dark) {
   html:root:not([data-theme="light"]) {
     --db-lightness: 0.88;
-    --db-hover-mod: 0.05;
+    --db-hover-mod: 0.1;
+    --db-hue: 100;
   }
 }
 
 /* 4. DARK MODE MANUAL (Pale Yellow) */
 html[data-theme="dark"] {
   --db-lightness: 0.88;
-  --db-hover-mod: 0.05;
+  --db-hover-mod: 0.1;
+  --db-hue: 100;
 }
