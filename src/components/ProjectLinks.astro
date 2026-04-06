@@ -1,0 +1,39 @@
+---
+interface Props {
+    links: { label: string; url: string }[] | undefined;
+    class?: string;
+}
+
+const { links, class: className } = Astro.props;
+---
+
+{
+    links && links.length > 0 && (
+        <nav class:list={["project-links", className]}>
+            {links.map((link) => (
+                <a
+                    href={link.url}
+                    target="_blank"
+                    role="button"
+                    class="primary outline"
+                >
+                    {link.label}
+                </a>
+            ))}
+        </nav>
+    )
+}
+
+<style>
+    .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .project-links [role="button"] {
+        margin-bottom: 0;
+        width: auto;
+    }
+</style>
