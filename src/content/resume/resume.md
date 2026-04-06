@@ -6,14 +6,14 @@ description: Machine Learning Engineer & Developer
 # Axel Demborg
 **Stockholm, Sweden**
 ## About
-Machine Learning Engineer with a background in Engineering Physics. Primary interests include machine learning, data analysis, and software development. Driven by a curious mind, I actively seek to reach over into new fields to expand my technical domain.
+Machine Learning Engineer with a background in Engineering Physics. Primary interests include machine learning, data analysis, and software development. Driven by curiosity, I actively seek to reach over into new fields to expand my technical domain.
 
 ## Work Experience
 
 ### Volumental | Stockholm
 **Machine Learning Engineer - Scrum Master** | *Aug. 2018 – Present*
 * Architect and deploy computer vision pipelines (CNNs for segmentation and keypoint detection) and tabular data recommender systems using **TensorFlow**, **Python**, and **C++**.
-* Engineer scalable microservices and infrastructure on **Google Cloud Run** (GCP) to support real-time biometric analysis.
+* Engineer scalable microservices and infrastructure on **Google Cloud Platform**.
 * Champion "Clean Code" practices and functional programming patterns to ensure high-quality, self-documenting, and maintainable software.
 
 ### Royal Institute of Technology (KTH) | Stockholm
@@ -42,9 +42,9 @@ Machine Learning Engineer with a background in Engineering Physics. Primary inte
 
 ## Skills
 
-* **Programming:** Python, C++, JavaScript/TypeScript, Golang, Java, Unix Shell.
+* **Programming:** Python, C++, JavaScript/TypeScript, Golang, Java, Unix Shell, LaTeX.
 * **Machine Learning:** TensorFlow, Computer Vision, Recommender Systems.
-* **Cloud & Tools:** Google Cloud Platform (Cloud Run), Docker, Git, LaTeX, Linux.
+* **Cloud & Tools:** Git, Google Cloud Platform, Docker, Linux.
 * **Languages:** Swedish (Native), English (Fluent), French (Basic).
 
 ## Commissions of Trust & Awards
