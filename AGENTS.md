@@ -21,7 +21,7 @@ This is an **Astro 5** personal portfolio site (demborg.se) deployed to GitHub P
 - `iframe`: Has an `iframe` field (URL)
 - `images`: Has an `images` array (at least one image)
 
-All types share `date`, `title`, `intro`, and optional `links`.
+All types share `date`, `title`, and optional `links`.
 
 **Rendering flow**:
 - `src/pages/index.astro` — fetches all projects, sorts by date, renders a grid of `ProjectCard` components

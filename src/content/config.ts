@@ -3,7 +3,6 @@ import { defineCollection, z } from 'astro:content';
 const baseSchema = z.object({
     date: z.date(),
     title: z.string(),
-    intro: z.string(),
     links: z.array(z.object({
         label: z.string(),
         url: z.string().url()

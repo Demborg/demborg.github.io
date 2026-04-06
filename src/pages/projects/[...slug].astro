@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 const { Content } = await render(project);
-const { title, intro, type, links } = project.data;
+const { title, type, links } = project.data;
 
 import Video from "../../components/visual/Video.astro";
 import Iframe from "../../components/visual/Iframe.astro";
@@ -37,13 +37,14 @@ import ProjectLinks from "../../components/ProjectLinks.astro";
         <header>
             <h1>{title}</h1>
             <p class="date">{project.data.date.toISOString().split("T")[0]}</p>
-            <p class="intro">{intro}</p>
-            <ProjectLinks links={links} />
         </header>
 
         <section class="content">
             <Content />
         </section>
+        <footer>
+            <ProjectLinks links={links} />
+        </footer>
     </article>
 </Layout>
 
@@ -51,11 +52,6 @@ import ProjectLinks from "../../components/ProjectLinks.astro";
     .project-view {
         max-width: 800px;
         margin: 0 auto;
-    }
-    .intro {
-        font-style: italic;
-        color: var(--pico-muted-color);
-        margin-bottom: var(--pico-spacing);
     }
     .content {
         line-height: 1.6;
