@@ -1,0 +1,49 @@
+@import "@picocss/pico/css/pico.min.css";
+:root {
+  --pico-border-radius: 1.5rem;
+}
+
+html:root:root:root {
+  /* Your Yellow DNA */
+  --db-hue: 100;
+  --db-chroma: 0.12;
+
+  /* Auto-calculate the base colors based on current theme */
+  --pico-primary: oklch(var(--db-lightness) var(--db-chroma) var(--db-hue));
+  --pico-primary-background: var(--pico-primary);
+  --pico-primary-border: var(--pico-primary);
+  --pico-primary-underline: var(--pico-primary);
+
+  /* Auto-calculate hover by adding the hover modifier */
+  --pico-primary-hover: oklch(
+    calc(var(--db-lightness) + var(--db-hover-mod)) var(--db-chroma)
+      var(--db-hue)
+  );
+  --pico-primary-hover-background: var(--pico-primary-hover);
+  --pico-primary-hover-border: var(--pico-primary-hover);
+
+  /* Pico v1 fallbacks (just in case Vite caches again) */
+  --primary: var(--pico-primary);
+  --primary-hover: var(--pico-primary-hover);
+}
+
+/* 2. LIGHT MODE (Mustard) */
+html[data-theme="light"],
+html:root:not([data-theme="dark"]) {
+  --db-lightness: 0.7;
+  --db-hover-mod: -0.1;
+}
+
+/* 3. DARK MODE OS (Pale Yellow) */
+@media only screen and (prefers-color-scheme: dark) {
+  html:root:not([data-theme="light"]) {
+    --db-lightness: 0.88;
+    --db-hover-mod: 0.05;
+  }
+}
+
+/* 4. DARK MODE MANUAL (Pale Yellow) */
+html[data-theme="dark"] {
+  --db-lightness: 0.88;
+  --db-hover-mod: 0.05;
+}
