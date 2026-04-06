@@ -3,6 +3,13 @@
   --pico-border-radius: 1.5rem;
 }
 
+button.outline,
+[role="button"].outline {
+  --pico-border-width: 2px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
 html:root:root:root {
   /* Your Yellow DNA */
   --db-hue: 100;
