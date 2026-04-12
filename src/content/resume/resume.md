@@ -11,7 +11,7 @@ Machine Learning Engineer with a background in Engineering Physics. Primary inte
 ## Work Experience
 
 ### Volumental | Stockholm
-**Machine Learning Engineer - Scrum Master** | *Aug. 2018 – Present*
+**Machine Learning Engineer** | *Aug. 2018 – Present*
 * Architect and deploy computer vision pipelines (CNNs for segmentation and keypoint detection) and tabular data recommender systems using **TensorFlow**, **Python**, and **C++**.
 * Engineer scalable microservices and infrastructure on **Google Cloud Platform**.
 * Champion "Clean Code" practices and functional programming patterns to ensure high-quality, self-documenting, and maintainable software.
@@ -49,6 +49,7 @@ Machine Learning Engineer with a background in Engineering Physics. Primary inte
 
 ## Commissions of Trust & Awards
 
+* **Board member** | Brf Tetris *(2023 Jun. 2023 - Jun 2025)*
 * **Generalkonsul (Local Responsible)** | Fysiksektionen, THS, KTH *(Jan. 2017 – Jan. 2018)*
 * **Reception Group Leader** | Fysiksektionen, THS, KTH *(Summer 2015)*
 * **Scholarship for Outstanding Grades** | Stiftelsen Henrik Göranssons Sandviken *(Apr. 2017)*
