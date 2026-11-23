@@ -22,7 +22,7 @@ import ProjectLinks from "../../components/ProjectLinks.astro";
 
 <Layout title={title}>
     <article class="project-view">
-        <div class="hero-visual">
+        <div class:list={["hero-visual", { "is-video": type === "video" }]}>
             {
                 type === "video" && (
                     <Video
@@ -66,5 +66,17 @@ import ProjectLinks from "../../components/ProjectLinks.astro";
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    /* videos are (near) square: show them whole instead of cropping to 16:9 */
+    .hero-visual.is-video {
+        aspect-ratio: 1;
+        max-height: 75vh;
+    }
+    .hero-visual.is-video :global(video) {
+        object-fit: contain;
+    }
+    .content :global(img) {
+        border-radius: var(--pico-border-radius);
+        margin-bottom: var(--pico-spacing);
     }
 </style>
