@@ -13,9 +13,9 @@ npm run astro check  # Type-check all .astro files (runs in CI on PRs)
 
 ## Architecture
 
-This is an **Astro 5** personal portfolio site (demborg.se) deployed to GitHub Pages on push to `master`.
+This is an **Astro 7** personal portfolio site (demborg.se) deployed to GitHub Pages on push to `master`.
 
-**Content-driven**: Projects live as markdown files in `src/content/projects/`. Each project folder contains a markdown file plus any co-located assets (images, videos). The content schema in `src/content/config.ts` enforces a discriminated union — every project must be one of three types:
+**Content-driven**: Projects live as markdown files in `src/content/projects/`. Each project folder contains a markdown file plus any co-located assets (images, videos). The content schema in `src/content.config.ts` enforces a discriminated union — every project must be one of three types:
 
 - `video`: Has a `video` field (path string) and optional `poster` image
 - `iframe`: Has an `iframe` field (URL)
@@ -35,4 +35,4 @@ All types share `date`, `title`, and optional `links`.
 
 ## Adding a New Project
 
-Create a folder under `src/content/projects/` with an `index.md` (or `.mdx`) and any assets. The frontmatter must match one of the three typed schemas in `config.ts`.
+Create a folder under `src/content/projects/` with an `index.md` (or `.mdx`) and any assets. The frontmatter must match one of the three typed schemas in `content.config.ts`.

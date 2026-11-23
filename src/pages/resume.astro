@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getEntry } from "astro:content";
+import { getEntry, render } from "astro:content";
 
 const resumeEntry = await getEntry("resume", "resume");
 if (!resumeEntry) {
     throw new Error("Resume entry not found");
 }
-const { Content } = await resumeEntry.render();
+const { Content } = await render(resumeEntry);
 ---
 
 <Layout title={resumeEntry.data.title}>

@@ -1,11 +1,13 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 const baseSchema = z.object({
     date: z.date(),
     title: z.string(),
     links: z.array(z.object({
         label: z.string(),
-        url: z.string().url()
+        url: z.url()
     })).optional(),
 });
 
@@ -17,7 +19,7 @@ const videoProject = ({ image }: { image: any }) => baseSchema.extend({
 
 const iframeProject = () => baseSchema.extend({
     type: z.literal('iframe'),
-    iframe: z.string().url(),
+    iframe: z.url(),
 });
 
 const galleryProject = ({ image }: { image: any }) => baseSchema.extend({
@@ -26,6 +28,12 @@ const galleryProject = ({ image }: { image: any }) => baseSchema.extend({
 });
 
 const projects = defineCollection({
+    // one folder per project: src/content/projects/<id>/index.md (+ co-located assets)
+    loader: glob({
+        pattern: '*/index.{md,mdx}',
+        base: './src/content/projects',
+        generateId: ({ entry }) => entry.split('/')[0],
+    }),
     schema: (tools) => z.discriminatedUnion('type', [
         videoProject(tools),
         iframeProject(),
@@ -34,6 +42,7 @@ const projects = defineCollection({
 });
 
 const resume = defineCollection({
+    loader: glob({ pattern: '*.md', base: './src/content/resume' }),
     schema: z.object({
         title: z.string(),
         description: z.string(),
