@@ -14,4 +14,4 @@ links:
   url: https://github.com/demborg/morse
 ---
 
-Reviving an old trainer telegraph key as a bluetooth keyboard and builiding a small "duolingo style" morse trainer as a web app so that I can actually learn to type on the darn thing.
+Reviving an old trainer telegraph key as a bluetooth keyboard and building a small "duolingo style" morse trainer as a web app so that I can actually learn to type on the darn thing.

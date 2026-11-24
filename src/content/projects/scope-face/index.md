@@ -9,4 +9,4 @@ links:
 video: /projects/scope-face/scope.mp4
 ---
 
-Showing a webcam feed on a oscilloscope screen by converting it to terrible sound
+Showing a webcam feed on an oscilloscope screen by converting it to terrible sound

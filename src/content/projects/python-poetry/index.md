@@ -12,4 +12,4 @@ images:
 - ./poetry.png
 ---
 
-I was embarrassingly proud of some of my solutions to this years advent of code puzzles. Pretentiously I call them "python poetry"
+I was embarrassingly proud of some of my solutions to this year's advent of code puzzles. Pretentiously I call them "python poetry"

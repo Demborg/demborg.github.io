@@ -24,6 +24,10 @@ Machine Learning Engineer with a background in Engineering Physics. Primary inte
 **IT Support & Administration (Summer Intern)** | *Summers 2011–2016*
 * Managed technical operations including server administration, software programming, and general IT support.
 
+### Zhejiang University | Hangzhou, China
+**Photonics Research Intern** | *Jun. 2015 – Jul. 2015*
+* Conducted experiments on the use of fiber Bragg gratings for sensing applications.
+
 ## Education
 
 ### Royal Institute of Technology (KTH) | Stockholm
@@ -34,12 +38,6 @@ Machine Learning Engineer with a background in Engineering Physics. Primary inte
 **Bachelor of Science in Engineering Physics** | *Sep. 2013 – Jun. 2016*
 * **Thesis:** Common Representations for Human-Robot Handovers.
 
-## Projects
-
-### Zhejiang University | Hangzhou, China
-**Photonics Research Intern** | *Jun. 2015 – Jul. 2015*
-* Conducted experiments on the use of fiber Bragg gratings for sensing applications.
-
 ## Skills
 
 * **Programming:** Python, C++, JavaScript/TypeScript, Golang, Java, Unix Shell, LaTeX.
@@ -49,7 +47,7 @@ Machine Learning Engineer with a background in Engineering Physics. Primary inte
 
 ## Commissions of Trust & Awards
 
-* **Board member** | Brf Tetris *(2023 Jun. 2023 - Jun 2025)*
+* **Board member** | Brf Tetris *(Jun. 2023 – Jun. 2025)*
 * **Generalkonsul (Local Responsible)** | Fysiksektionen, THS, KTH *(Jan. 2017 – Jan. 2018)*
 * **Reception Group Leader** | Fysiksektionen, THS, KTH *(Summer 2015)*
 * **Scholarship for Outstanding Grades** | Stiftelsen Henrik Göranssons Sandviken *(Apr. 2017)*
