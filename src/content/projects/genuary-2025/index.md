@@ -1,6 +1,7 @@
 ---
 date: 2025-01-01
 title: Genuary 2025
+ai: "0"
 type: images
 links:
 - label: Genuary

@@ -1,6 +1,7 @@
 ---
 date: 2023-03-23
 title: 'Teewee: the art exhibition'
+ai: "0"
 type: images
 links:
 - label: Details

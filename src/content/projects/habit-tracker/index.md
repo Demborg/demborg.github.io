@@ -1,6 +1,7 @@
 ---
 date: 2023-07-15
 title: Habit tracker
+ai: "R"
 type: images
 links:
 - label: Try

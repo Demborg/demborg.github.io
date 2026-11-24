@@ -1,6 +1,7 @@
 ---
 date: 2024-09-13
 title: Luminous fit
+ai: "R"
 type: images
 links:
 - label: Volumental Online

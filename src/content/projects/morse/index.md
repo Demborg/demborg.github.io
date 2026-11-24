@@ -1,6 +1,7 @@
 ---
 date: 2026-03-22
 title: Morse
+ai: "W"
 type: images
 images:
 - ./trainer.png

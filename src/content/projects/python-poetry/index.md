@@ -1,6 +1,7 @@
 ---
 date: 2020-12-04
 title: Python poetry
+ai: "0"
 type: images
 links:
 - label: Problem

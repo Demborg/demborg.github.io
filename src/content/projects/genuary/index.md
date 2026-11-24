@@ -1,6 +1,7 @@
 ---
 date: 2026-01-05
 title: Genuary
+ai: "W"
 type: iframe
 links:
 - label: Try it!

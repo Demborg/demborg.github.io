@@ -1,6 +1,7 @@
 ---
 date: 2022-08-12
 title: Cheap copies
+ai: "0"
 type: video
 links:
 - label: Fotografiska

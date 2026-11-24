@@ -1,6 +1,7 @@
 ---
 date: 2019-06-01
 title: Worst raytracer
+ai: "0"
 type: images
 links:
 - label: Source

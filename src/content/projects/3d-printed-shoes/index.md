@@ -1,6 +1,7 @@
 ---
 date: 2023-12-02
 title: 3d printed shoes?!
+ai: "0"
 type: images
 links:
 - label: Inspiration

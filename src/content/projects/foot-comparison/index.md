@@ -1,6 +1,7 @@
 ---
 date: 2025-05-09
 title: Foot comparison
+ai: "W"
 type: images
 links:
 - label: Try it!

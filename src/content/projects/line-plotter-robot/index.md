@@ -1,6 +1,7 @@
 ---
 date: 2021-08-01
 title: Line plotter robot
+ai: "0"
 type: images
 links:
 - label: Source

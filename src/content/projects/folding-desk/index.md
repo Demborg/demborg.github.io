@@ -1,6 +1,7 @@
 ---
 date: 2020-04-01
 title: Folding desk
+ai: "0"
 type: video
 links:
 - label: Instagram

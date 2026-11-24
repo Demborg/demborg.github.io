@@ -1,6 +1,7 @@
 ---
 date: 2024-08-18
 title: Scale of life
+ai: "R"
 type: images
 links:
 - label: Try

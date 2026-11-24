@@ -1,6 +1,7 @@
 ---
 date: 2023-02-01
 title: Brownian motion for plotter
+ai: "0"
 type: iframe
 links:
 - label: Centrifug

@@ -1,6 +1,7 @@
 ---
 date: 2023-06-23
 title: Game of light
+ai: "0"
 type: video
 links:
 - label: Game of life

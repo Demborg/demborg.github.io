@@ -1,6 +1,7 @@
 ---
 date: 2019-08-01
 title: CPPN
+ai: "0"
 type: iframe
 links:
 - label: Try

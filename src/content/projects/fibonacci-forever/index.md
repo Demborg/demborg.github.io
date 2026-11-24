@@ -1,6 +1,7 @@
 ---
 date: 2026-01-03
 title: Fibonacci forever
+ai: "0"
 type: video
 links:
 - label: Instagram

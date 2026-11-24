@@ -1,6 +1,7 @@
 ---
 date: 2023-07-14
 title: Hamlight
+ai: "0"
 type: images
 images:
 - ./hamlight1.jpg

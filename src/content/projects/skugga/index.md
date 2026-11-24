@@ -1,6 +1,7 @@
 ---
 date: 2026-08-27
 title: Skugga
+ai: "X"
 type: video
 video: /projects/skugga/scan.mp4
 links:

@@ -1,6 +1,7 @@
 ---
 date: 2022-01-01
 title: Geometry nodes galore
+ai: "0"
 type: images
 links:
 - label: Instagram

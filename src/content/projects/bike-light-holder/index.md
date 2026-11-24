@@ -1,6 +1,7 @@
 ---
 date: 2026-11-23
 title: Yak shaving
+ai: "R"
 type: video
 video: /projects/bike-light-holder/holder.mp4
 poster: ./poster.jpg

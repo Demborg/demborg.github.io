@@ -1,6 +1,7 @@
 ---
 date: 2023-01-01
 title: Genuary 2023
+ai: "0"
 type: video
 links:
 - label: Genuary

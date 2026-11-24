@@ -1,6 +1,7 @@
 ---
 date: 2022-07-17
 title: Dice rolling game
+ai: "0"
 type: images
 links:
 - label: Try

@@ -1,6 +1,7 @@
 ---
 date: 2020-11-23
 title: Scope face
+ai: "0"
 type: video
 links:
 - label: Source

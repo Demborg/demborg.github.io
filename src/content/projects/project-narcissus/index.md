@@ -1,6 +1,7 @@
 ---
 date: 2020-06-01
 title: Project Narcissus
+ai: "0"
 type: iframe
 links:
 - label: Try

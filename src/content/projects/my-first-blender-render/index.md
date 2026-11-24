@@ -1,6 +1,7 @@
 ---
 date: 2021-05-01
 title: My first blender render!
+ai: "0"
 type: images
 links:
 - label: Tutorial

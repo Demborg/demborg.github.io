@@ -21,7 +21,7 @@ This is an **Astro 7** personal portfolio site (demborg.se) deployed to GitHub P
 - `iframe`: Has an `iframe` field (URL)
 - `images`: Has an `images` array (at least one image)
 
-All types share `date`, `title`, and optional `links`.
+All types share `date`, `title`, `ai` (AI usage per https://0rwx.com: `"0"`, `"R"`, `"W"` or `"X"`, quoted, shown as a badge via `AiBadge.astro`), and optional `links`.
 
 **Rendering flow**:
 - `src/pages/index.astro` — fetches all projects, sorts by date, renders a grid of `ProjectCard` components

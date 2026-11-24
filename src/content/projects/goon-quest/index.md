@@ -1,6 +1,7 @@
 ---
 date: 2023-07-09
 title: Goon Quest
+ai: "0"
 type: images
 links:
 - label: Try

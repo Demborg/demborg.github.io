@@ -1,6 +1,7 @@
 ---
 date: 2020-01-01
 title: This very website
+ai: "0"
 type: images
 links:
 - label: Try

@@ -1,6 +1,7 @@
 ---
 date: 2026-03-15
 title: Trafik
+ai: "W"
 type: images
 images:
 - ./device.jpg

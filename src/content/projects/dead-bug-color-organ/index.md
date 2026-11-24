@@ -1,6 +1,7 @@
 ---
 date: 2020-04-15
 title: Dead bug color organ
+ai: "0"
 type: images
 links:
 - label: Inspiration

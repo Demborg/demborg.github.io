@@ -1,6 +1,7 @@
 ---
 date: 2020-02-01
 title: Playlist from chat history
+ai: "0"
 type: images
 links:
 - label: Playlist

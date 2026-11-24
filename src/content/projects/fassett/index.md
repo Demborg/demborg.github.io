@@ -1,6 +1,7 @@
 ---
 date: 2024-01-02
 title: Fassett
+ai: "R"
 type: iframe
 links:
 - label: Inspiration

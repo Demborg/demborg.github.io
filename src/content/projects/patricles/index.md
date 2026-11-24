@@ -1,6 +1,7 @@
 ---
 date: 2024-01-01
 title: Particles
+ai: "0"
 type: video
 links:
 - label: .blend

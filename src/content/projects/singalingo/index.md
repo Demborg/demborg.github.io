@@ -1,6 +1,7 @@
 ---
 date: 2023-12-02
 title: Singalingo
+ai: "R"
 type: iframe
 links:
 - label: Try

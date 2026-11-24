@@ -1,6 +1,7 @@
 ---
 date: 2026-08-22
 title: Cellar link
+ai: "X"
 type: images
 images:
 - ./cellar.jpg

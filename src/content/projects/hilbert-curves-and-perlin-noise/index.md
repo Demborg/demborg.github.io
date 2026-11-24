@@ -1,6 +1,7 @@
 ---
 date: 2023-02-15
 title: Hilbert curves and perlin noise
+ai: "0"
 type: iframe
 links:
 - label: Fullscreen

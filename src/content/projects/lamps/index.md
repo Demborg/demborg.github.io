@@ -1,6 +1,7 @@
 ---
 date: 2020-08-15
 title: Lamps
+ai: "0"
 type: images
 links:
 - label: Instagram

@@ -1,6 +1,7 @@
 ---
 date: 2019-10-10
 title: Sju års lycka
+ai: "0"
 type: images
 links:
 - label: Instagram

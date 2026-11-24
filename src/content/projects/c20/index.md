@@ -1,6 +1,7 @@
 ---
 date: 2024-01-03
 title: C20
+ai: "0"
 type: iframe
 links:
 - label: Original

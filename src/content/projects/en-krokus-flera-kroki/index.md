@@ -1,6 +1,7 @@
 ---
 date: 2022-04-20
 title: En krokus, flera kroki
+ai: "0"
 type: images
 links:
 - label: Instagram

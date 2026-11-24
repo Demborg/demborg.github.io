@@ -1,6 +1,7 @@
 ---
 date: 2022-11-27
 title: Animations galore!
+ai: "0"
 type: video
 links:
 - label: CSS

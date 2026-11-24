@@ -1,6 +1,7 @@
 ---
 date: 2023-11-01
 title: Virtual kinetic sculpture
+ai: "0"
 type: video
 links:
 - label: Original

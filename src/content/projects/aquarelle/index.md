@@ -1,6 +1,7 @@
 ---
 date: 2024-05-01
 title: Aquarelle
+ai: "R"
 type: iframe
 links:
 - label: Original

@@ -1,6 +1,7 @@
 ---
 date: 2026-02-05
 title: Page Rewrite for 2026
+ai: "W"
 type: images
 images:
 - ./image.png

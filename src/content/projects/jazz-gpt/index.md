@@ -1,6 +1,7 @@
 ---
 date: 2023-05-07
 title: Jazz-GPT
+ai: "W"
 type: iframe
 links:
 - label: Fullscreen

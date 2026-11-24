@@ -1,6 +1,7 @@
 ---
 date: 2024-06-23
 title: Kintsugi
+ai: "0"
 type: images
 links:
 - label: Kintsugi

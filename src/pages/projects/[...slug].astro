@@ -18,6 +18,7 @@ import Video from "../../components/visual/Video.astro";
 import Iframe from "../../components/visual/Iframe.astro";
 import Images from "../../components/visual/Images.astro";
 import ProjectLinks from "../../components/ProjectLinks.astro";
+import AiBadge from "../../components/AiBadge.astro";
 ---
 
 <Layout title={title}>
@@ -36,7 +37,10 @@ import ProjectLinks from "../../components/ProjectLinks.astro";
         </div>
         <header>
             <h1>{title}</h1>
-            <p class="date">{project.data.date.toISOString().split("T")[0]}</p>
+            <div class="meta">
+                <p class="date">{project.data.date.toISOString().split("T")[0]}</p>
+                <AiBadge level={project.data.ai} showLabel />
+            </div>
         </header>
 
         <section class="content">
@@ -52,6 +56,16 @@ import ProjectLinks from "../../components/ProjectLinks.astro";
     .project-view {
         max-width: 800px;
         margin: 0 auto;
+    }
+    .meta {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: var(--pico-spacing);
+        color: var(--pico-muted-color);
+    }
+    .meta .date {
+        margin: 0;
     }
     .content {
         line-height: 1.6;

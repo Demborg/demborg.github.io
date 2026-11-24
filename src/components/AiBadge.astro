@@ -1,0 +1,65 @@
+---
+// AI usage badge per https://0rwx.com (badges CC0, by NamtaoProductions)
+import zero from "../assets/0rwx/AI-0.svg?raw";
+import read from "../assets/0rwx/AI-R.svg?raw";
+import write from "../assets/0rwx/AI-W.svg?raw";
+import execute from "../assets/0rwx/AI-X.svg?raw";
+
+type Level = "0" | "R" | "W" | "X";
+
+interface Props {
+    level: Level;
+    showLabel?: boolean;
+    class?: string;
+}
+
+const levels: Record<Level, { svg: string; label: string; meaning: string }> = {
+    "0": { svg: zero, label: "Hand made", meaning: "AI can't read or write to this work" },
+    R: { svg: read, label: "AI inspired", meaning: "AI had read-only permissions" },
+    W: { svg: write, label: "AI collaboration", meaning: "AI had read-write permissions" },
+    X: { svg: execute, label: "AI made", meaning: "AI had execute permissions" },
+};
+
+const { level, showLabel = false, class: className } = Astro.props;
+const { svg, label, meaning } = levels[level];
+---
+
+<a
+    href="https://0rwx.com"
+    target="_blank"
+    class:list={["ai-badge", className]}
+    title={`AI:${level} · ${label}: ${meaning}`}
+    aria-label={`AI usage AI:${level}, ${label}`}
+>
+    <span class="icon" set:html={svg} />
+    {showLabel && <span class="label">{label}</span>}
+</a>
+
+<style>
+    .ai-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4em;
+        color: var(--pico-muted-color);
+        text-decoration: none;
+        line-height: 1;
+        transition: color 0.15s ease;
+    }
+    .ai-badge:hover,
+    .ai-badge:focus-visible {
+        color: var(--pico-primary);
+    }
+    .icon {
+        display: inline-flex;
+        width: 2em;
+        height: 2em;
+        flex-shrink: 0;
+    }
+    .icon :global(svg) {
+        width: 100%;
+        height: 100%;
+    }
+    .label {
+        font-size: 0.875em;
+    }
+</style>

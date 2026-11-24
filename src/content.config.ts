@@ -5,6 +5,8 @@ import { z } from 'astro/zod';
 const baseSchema = z.object({
     date: z.date(),
     title: z.string(),
+    // AI usage per https://0rwx.com: 0 = hand made, R = AI inspired, W = AI collaboration, X = AI made
+    ai: z.enum(['0', 'R', 'W', 'X']),
     links: z.array(z.object({
         label: z.string(),
         url: z.url()

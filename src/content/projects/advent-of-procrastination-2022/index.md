@@ -1,6 +1,7 @@
 ---
 date: 2022-12-01
 title: Advent of procrastination 2022
+ai: "0"
 type: iframe
 links:
 - label: Solutions

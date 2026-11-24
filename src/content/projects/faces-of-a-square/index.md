@@ -1,6 +1,7 @@
 ---
 date: 2026-01-01
 title: Faces of a square
+ai: "0"
 type: iframe
 links:
 - label: Try it!

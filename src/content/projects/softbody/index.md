@@ -1,6 +1,7 @@
 ---
 date: 2026-01-02
 title: Softbody
+ai: "R"
 type: iframe
 links:
 - label: Try it!

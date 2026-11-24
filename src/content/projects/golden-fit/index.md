@@ -1,6 +1,7 @@
 ---
 date: 2025-05-10
 title: Golden fit
+ai: "0"
 type: video
 video: /projects/golden-fit/fit.mp4
 ---

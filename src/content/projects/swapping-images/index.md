@@ -1,6 +1,7 @@
 ---
 date: 2020-11-27
 title: Swapping images
+ai: "0"
 type: images
 links:
 - label: Source
