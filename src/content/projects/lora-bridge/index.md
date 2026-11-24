@@ -13,4 +13,6 @@ links:
   url: https://tilthydrometer.com
 ---
 
-Our beer ferments in a cellar four floors down with no wifi, so the Tilt hydrometer in the bucket had no way to tell anyone how it was doing. Johan, our brew captain, sorted all the hardware and I wrote the Rust for both ends. A battery powered ESP32 listens to the Tilt over bluetooth and throws a reading up to a Pi in the apartment over LoRa every sixteen minutes, which forwards it to Brewfather. On a one percent duty cycle it should last a couple of months per charge.
+Our brewery has graduated from a too warm cupboard to a root cellar four floors under my apartment. Great as this is for our small yeast friends, it poses a big problem for a hobby brewery of engineers: with no wifi, how is the Tilt bobbing in the bucket to tell us how the brew is doing?!
+
+Our brewfather Johan had a solution of course, and hooked us up with a low-power LoRa link to forward the progress of the brew back up the stairs. In a mad dash to get it all working before the brew session I let a Claude session loose with access to both the ESP32 on the sender side and the Raspberry Pi on the receiver, and we _just_ managed to get a link up and running in time for the pitch.
