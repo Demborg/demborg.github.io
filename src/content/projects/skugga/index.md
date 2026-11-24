@@ -11,4 +11,4 @@ links:
   url: https://www.ri.cmu.edu/pub_files/pub4/yamazaki_shuntaro_2007_1/yamazaki_shuntaro_2007_1.pdf
 ---
 
-At work we scan feet with proper hardware, so for the August hackathon I wanted to see how far you get with a webcam, a strip of addressable LEDs and a white board. Light one LED at a time, the foot throws a shadow, and enough shadows carve away everything that can't be foot. No moving parts anywhere, which is the part I like.
+One of my favourite properties of light for computer vision is _reciprocity_: a camera is just a projector in reverse, and a point light is equivalent to a pinhole camera. So you can build a 3D scanning rig with hundreds of "virtual" cameras by lighting a scene with known lights one at a time and observing the cast shadows. Since we scan feet for a living, I spent our August hackathon at work using this principle and a strip of WS2812 addressable LEDs to make a pretty decent 3D scanner with a single camera and some fairly simple space carving.
